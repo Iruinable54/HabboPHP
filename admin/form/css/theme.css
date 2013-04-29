@@ -1,0 +1,113 @@
+/*-------------------------------------------------------------------------------------------*/
+/* 1. SETUP */
+/*-------------------------------------------------------------------------------------------*/
+
+/* 1.1 Defaults */
+
+body  {
+	color: #000 !important;
+}
+
+
+h1 a:link, h1 a:visited, h2 a:link, h2 a:visited, h3 a:link, h3 a:visited,
+h4 a:link, h4 a:visited, h5 a:link, h5 a:visited, h6 a:link, h6 a:visited  {
+	color: #000;
+}
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* 2. NAVIGATION */
+/*-------------------------------------------------------------------------------------------*/
+
+
+/* 2.1 Drop-down menus */
+
+
+#nav li ul li a:hover  { color: #b38b01; }
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* 3. SITE STRUCTURE & APPEARANCE */
+/*-------------------------------------------------------------------------------------------*/
+
+/* 3.1 Containers */
+
+#bg  { float: left; width: 100%; /*background: url(../images/darkergreen.jpg) fixed no-repeat center top;*/ }
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* 4. POSTS */
+/*-------------------------------------------------------------------------------------------*/
+
+
+
+/* 4.1 Typographic Elements */
+
+.entry blockquote  { color: #949494; }
+
+
+/* 4.2 Images */
+
+
+/* 4.3 Pagination / WP-Pagenavi */
+
+#content .wp-pagenavi .current  {
+	color: #000!important;
+	background-color: #b38b01!important;
+}
+#content .wp-pagenavi a:link, #content .wp-pagenavi a:visited  { color: #b38b01; }
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* 5. WIDGETS */
+/*-------------------------------------------------------------------------------------------*/
+
+/* 5.1 Social Media Box */
+
+/* 5.2 Tabber */
+
+#tabber .list li a:link,
+#tabber .list li a:visited  {
+	background: url(gold/widgetbullet.png) no-repeat 5px center;
+}
+
+/* 5.3 Generic Widgets */
+
+.widget ul li  { background: url(gold/widgetbullet.png) no-repeat left 9px;}
+
+.widget ul li a:link,
+.widget ul li a:visited  {
+	color: #b1b1b1;
+}
+
+.widget ul li a:hover  {
+	color: #b38b01;
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* 6. COMMENTSAREA */
+/*-------------------------------------------------------------------------------------------*/
+
+/* 6.1 Comments */
+
+#comments .comment-meta span.name  { color: #b38b01; }
+#comments .comment-meta span.name a  { color: #b38b01; }
+#comments .comment-meta span.date,
+#comments .comment-meta span.edit,
+#comments .comment-meta span.perma  { color: #b1b1b1; }
+
+
+/* 6.2 Comments Form */
+
+#commentform label span  { color: #b38b01; }
+
+
+#social,#field_properties_pane,#form_properties_pane{
+	font-family: 'Trebuchet MS','Lucida Grande',Tahoma,Arial,sans-serif;
+	font-weight: bold;
+}

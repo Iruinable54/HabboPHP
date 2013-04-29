@@ -1,0 +1,107 @@
+	div.example_paginate {
+		padding: 3px;
+		margin: 3px;
+		text-align:center;
+	}
+	
+	div.example_paginate a {
+		padding: 2px 5px 2px 5px;
+		margin: 2px;
+		background: #F6F6F6 -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#EFEFEF));
+	border: 1px solid #CCC;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #646566;
+	text-decoration: none;
+	cursor: pointer;
+	height: 2.0833em
+		}
+	div.example_paginate a:hover, div.digg a:active {
+		-webkit-box-shadow: #999 0px 0px 3px;
+	background: #F3F3F3 -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#EBEBEB));
+	color: #1E90FF;
+	border-color: #999;
+	outline: 0px;
+
+
+		
+	}
+	div.example_paginate span.div_pg_actuelle {
+		padding: 2px 5px 2px 5px;
+		margin: 2px;
+			-webkit-box-shadow: #999 0px 0px 3px;
+	background: #F3F3F3 -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#EBEBEB));
+	color: #1E90FF;
+	border-color: #999;
+	outline: 0px;
+		}
+	div.example_paginate span.div_null {
+		padding: 2px 5px 2px 5px;
+		margin: 2px;
+		border: 1px solid #EEE;
+	
+		color: #DDD;
+	}
+	
+	
+button.pagebutton
+{
+	background: #F6F6F6 -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#EFEFEF));
+	border: 1px solid #CCC;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #646566;
+	cursor: pointer;
+	height: 2.0833em;
+	overflow: visible;
+	padding: 0px 0.5em;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+button.pagebutton:hover, button.pagebutton:focus
+{
+	-webkit-box-shadow: #999 0px 0px 3px;
+	background: #F3F3F3 -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#EBEBEB));
+	color: #1E90FF;
+	border-color: #999;
+	outline: 0px;
+}
+button.pagebutton:active
+{
+	-webkit-box-shadow: #999 0px 0px 3px;
+	background: #F3F3F3 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#C4C2C2), to(white));
+	color: #1E90FF;
+	border-color: #999;
+	outline: 0px;
+}
+
+button.activepage
+{
+	-webkit-box-shadow: none;
+	background: #DDD;
+	border-color: #CCC;
+	color: black;
+	cursor: default;
+	font-weight: bold;
+}
+
+button.activepage:hover, button.activepage:focus
+{
+	-webkit-box-shadow: none;
+	background: #DDD;
+	border-color: #CCC;
+	color: black;
+	cursor: default;
+	font-weight: bold;
+}
+button.activepage:not.activepage:active
+{
+	-webkit-box-shadow: none;
+	background: #DDD;
+	border-color: #CCC;
+	color: black;
+	cursor: default;
+	font-weight: bold;
+}

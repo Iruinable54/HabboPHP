@@ -1,0 +1,117 @@
+#navigation  { z-index: 9999; }
+
+#nav .current_page_item a,
+#nav a:hover,
+#main,
+.post,
+.Nav a:link,
+.Nav a:visited,
+.box,
+.widget,
+#searchform #s,
+#comments li,
+#commentform input.txt,
+#commentform textarea  {
+	zoom: 1;
+}
+
+#nav li ul li {
+	margin: 0;
+}
+#nav a:hover,#nav .current_page_item a{
+	background-color: #cc7f66;
+}
+
+#main{
+	background-color: #FF9F80;
+}
+#bottom_shadow{
+	display: none;
+}
+#btn_add_field{
+	margin-left: 10px !important;
+}
+#sidebar  {
+	top:75px;  
+	margin-left:131px; 
+}
+#all_properties{
+	width: 280px;
+}
+#all_properties legend,#all_form_properties legend{
+	margin-bottom: 10px;
+}
+#form_prop_language,#form_prop_label_alignment{
+	padding-bottom: 0px !important;
+}
+
+#all_form_properties fieldset textarea{
+	width: 94%;
+	margin-left: -15px;
+	padding-left: 0px;
+}
+#scheduling_cal_start,#scheduling_cal_end{
+	padding-left: 3px;
+	padding-right: 5px;
+
+}
+#prop_breaker{
+	margin-top: -15px;
+}
+#form_date_range_minimum{
+	margin-left: 5px;
+}
+#element_inactive_msg{
+	display: none;
+}
+#form_review_title,#form_review_description{
+	margin-left: 3px !important;
+	width: 90% !important;
+}
+#form_review_description{
+	margin-left: 3px !important;
+	width: 92% !important;
+}
+#form_prop_review label.choice{
+	margin-left: -5px !important;
+}
+.font_picker_meta{
+	position: static !important;
+}
+.font_icon{
+	display: none !important;	
+}
+#mf_form_list .form_meta{
+	width: 50% !important;
+}
+#filter_form_input{
+	color: #000;
+}
+#entries_options{
+	width: 205px;
+}
+#me_pagination{
+	width: 880px;	
+}
+#me_sort_option{
+	margin-top: -10px;
+	width: 260px;
+}
+#me_sort_option *{
+	float: right;
+}
+#me_pagination_label{
+	width: 600px;
+}
+#dialog-export-entries li{
+	display: inline;
+}
+#dialog-export-entries a{
+	width: 85%;
+}
+#ec_information,#ec_options{
+	margin-left: 20px !important;
+}
+#ec_main_code_meta h5{
+	margin-top: 115px;
+}

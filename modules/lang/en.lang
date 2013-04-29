@@ -1,0 +1,285 @@
+yes=Yes
+no=No
+Yes=Yes
+No=No
+Logout=Logout
+Cancel = Cancel
+Save = Save
+Close=Close
+Enter= Enter
+password = Password
+Password = Password
+I_am = I Am
+male = Male
+female = Female
+Continue = Continue
+password = Password
+Valider = Valider
+Home= Home
+Homepage=Homepage
+Security=Securtity
+VIP=VIP
+Events=Events
+Save = Save
+Delete = Delete
+
+Help=Help
+help=Help
+Enterin=Enter Hotel
+online=Online
+Config=Config
+Name=Name
+Motto=Motto
+Lastlogin=Last Login
+Enterhotel=Enter Nuke Hotel
+Seemore=View +
+Seeless=View -
+GoView = Go View
+Delete = Detete
+error_token = Enter Token
+Your = Your
+######################################################
+# Header
+######################################################
+
+
+HelpMe = Help
+Enterin = Enter Nuke
+Shop = Shop
+Community = Community
+online = Online
+Home = Home	
+MyHomePage = My Page	
+MyPreferences = My Preferences
+Events = Even
+Buy = Buy
+BuyBadges = Buy Badges
+
+######################################################
+# Register
+######################################################
+pseudo_prefix = Your username can contain letters (uppercase and lowercase), numbers and hyphens (-). It may begin with-OWN, 0wn-, ADM-,-MOD, M0D-, SOS-, S0S-XXX-.
+need_mail_register = We will need your Email to send you back your password if you forget or to contact the support for example.
+register_password_need = Your password must be at least 6 characters <b> </ b> <b> and include letters and numbers.
+password_forgotten_error_password_empty = Thank you for filling a new password.
+password_forgotten_error_empty_retypedPassword = Thank you for filling the password confirmation.
+password_forgotten_error_password_not_egal = Your passwords do not match.
+password_forgotten_password_strlen = Your password must do more than 5 characters.
+
+password_forgotten = Forgot your password?
+password_forgotten_email = Thank you to indicate your registered email address in Nuke.
+password_forgotten_error_email = Indicates a valid email address that exists in our database.
+send_email = Send an email
+password_forgotten_success = A message containing a link allowing you to change your password you were sent by email.
+password_forgotten_spam = If you do not find it, take a look in your spam box!
+password_forgotten_other_mail = Another email address
+register_you = Join
+it_is_free = It's free!
+with = With
+confirm_password = Confirm password
+confirm_password_info = just to be sure ...
+register_error_bean = Thank you specify a valid date.
+register_error_pseudo_prefix = Your username contains forbidden words.
+register_error_gender = Thank you to indicate a sex
+register_bean_and_gender = Date of birth and sex
+account_details = Account Details
+security_code = Security Code
+register_true_bean = Thank you to indicate your real date of birth
+register_error_email_exist = This email is already in use.
+register_newsletter = I want to be informed about news in Habbo and receive the newsletter.
+register_error_pseudo = Thank you to indicate a nickname.
+register_error_email = Thank you to indicate an email.
+register_error_password = Thank you specify a password.
+register_error_passwordConfirm = Thank you specify a password confirmation.
+register_error_min_caracteres = Your password must be 5 characters minium.
+register_error_password_different = Your passwords are different.
+register_error_pseudo_strlen = Your username is too long.
+register_error_pseudo_preg = You have the right to use only letters, digits and hyphen (-).
+register_error_pseudo_exist = Your username is already taken.
+register_error_email_syntaxe = Your email address is not valid.
+register_error_termofservice = Thank you for reading and accept our terms and conditions before signing up.
+register_error_security = The security code is wrong.
+register_error_figurey = Choose a look
+register_look_and_pseudo = Register Look Nickname
+password_forgotten_error_mail_smtp = An error has occurred. Contact the administrator.
+I_agree = I accept the
+conditions_use = Terms of Use
+
+######################################################
+# Login
+######################################################
+login_with_facebook = Login With Facebook
+login_or_create_account = Create a Habbo compte
+clic_here = click here
+error_login_pseudo = Indicates a nickname.
+error_login_password = Specifies a password.
+error_login_wrong = Username or password incorrect.
+EmailForNewPassword = A message containing a link allowing you to change your password you were sent by email.
+SeeSpam = If you do not find it, take a look in your spam box!
+Fermer = Close
+Username = Nickname
+NeedJavascriptTitle = JavaScript support manquant
+NeedJavascript = Javascript is disabled in your browser. Thank you to activate or upgrade to a browser that contains Javascript to use Nuke :)
+NeedCookiesTitle = Cookies required
+NeedCookies = Your browser does not accept cookies. To play Habbo you must change this and allow.
+NewUser = New users
+UsersOnlineIndex = inside!
+StopImmediatly = If this is not the case, everything stops immediately!
+StartWithURL = This screen is designed to protect your personal information from phishing. Check that the address above starts out by
+DefineNewPassword = Set the password
+NewPassword = New password
+ConfirmeNewPassword = Confirm new password
+MoreThan6Characters = Your password must be at least 6 characters <b> </ b> and include letters and numbers <b> </ b>
+
+
+
+######################################################
+# Help
+######################################################
+help_search_consulter = Search result
+
+
+######################################################
+# Me
+######################################################
+ReadNext = Lire la suite
+
+Enter_hotel = Enter The Hotel
+Look_for_first_visit = Choose a look for your first visit:
+You_dont_like = You do not love?
+See_more_looks = See more looks
+no_panique_you_can_change_after = Do not panic - You can change your outfit later.
+profile_update_success = Last day done.
+
+
+######################################################
+# Account Setting
+######################################################
+AccountSettings = Account Settings
+FriendManagement = Managing friends
+LastConnected = last login
+Remove=Remove
+FindAFriend = Find A Friend:
+friends = Friends
+See = See
+NoFriends = You don't have any friends.
+Previous = Previous
+Next = Next
+profile_error_last_password = Thank you to indicate your old password.
+profile_error_last_password_correct = Your old password is incorrect.
+profile_error_password_fb = It is impossible to change your password because you are using Facebook to connect.
+profile_error_new_password_empty = Thank you for giving a new password.
+profile_error_new_password_strlen = Your password must be at least 5 characters.
+profile_error_new_passwordConfirm_empty = Thank you for filling the password confirmation.
+profile_error_not_egale = Your two passwords do not match.
+ChangePassword = Change password
+FacebookError = Facebook error
+ModificationOfPasswordOK = Your password was successfully changed.
+CompleteThisToChangePassword = To change your password, fill the fields below.
+OldPassword = Current password
+NewPassword = New password
+ConfirmNewPassword = Confirm new password
+
+######################################################
+# Home
+######################################################
+Widgets = Widgets
+Images = Imges
+Background = Background
+Note = Note
+MyBadges = My Badges
+AboutMyBadges = Displays your badges on your page
+Traxplayer = Traxplayer
+AboutTraxplayer = Ecoute tes propres tubes Habbo sur ta Habbo Home.
+MyRooms = My Rooms
+Book = Book
+MyGroups = My Groups
+MyFriends = My Friends
+Loading = Loading
+NoteStyle = Note Style
+MyProfil = My Profile
+Bubble = Bubble
+Notepad = Notepad
+Golden = Golden
+Default = Default
+Pink = HC Pink
+Techno = HC Techno
+Metal = Metal
+Noteit = Noteit
+Naked = Transparent
+Add = Add
+SomeHomePageRandom = Home some random ...
+HomeIsDeactivate = The home of this user is disabled
+MayBeTheUserIsBan = It seems that the owner of This page is banned.
+
+Myprofile = My Prfile
+Inventory = Inventory
+Terminer = Finish
+Pictures = Image
+Background = Bacground
+LinkYoutube = Link To Youtube Video
+Add = Add
+Colors = Colour
+Red = Red
+Blue = Blue
+Green  = Green
+Pink = Pink
+
+Size = Size
+Small = Small
+Medium = Medium
+Large = Large
+
+Edit = Edit
+Finish = Finish
+MyProfile = My Profile
+Badges = Badges
+TraxPlayer = TRAXPLAYER
+MyRooms = My Rooms
+AddMessage = Add Message
+HabboCreated = Nuke Created 
+
+######################################################
+# Shop
+######################################################
+
+BadgesShop = Shop badges
+Success_new_badge = Your purchase is confirmed!
+YouHaveBadge = You already have this badge
+YouHaveNoEnough = You do not have enough
+
+ConfirmBuyCredits = Confirmation of purchase
+DetailsBuy = Purchase details
+Product = Product
+Amount = Amount
+ForTheAccount = On behalf
+HaveVoucher = If you got a code other than the payment methods below, here comes the
+Exchange = Exchange
+
+Success_get_coins = Success!
+Error_buy = An error has occurred
+ConfirmBuy = You confirmed this purchase?
+SelectPaiement = You must choose a payment method
+
+
+######################################################
+# Staff
+######################################################
+
+Administrators = Administrators
+Founders = Founders
+Moderators = Mod&eacute;rateurs
+Staff = Staff
+SuperHobba = Super Hobba
+
+
+######################################################
+# Sécurité 
+######################################################
+
+
+Securite = Security
+HabboAttitude = Habbo attitude
+ConseilsSecurity = Safety Tips
+CentreSecurity = Security Center
+Signalerdesabus = Signal des abus

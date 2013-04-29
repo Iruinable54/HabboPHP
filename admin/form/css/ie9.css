@@ -1,0 +1,12 @@
+#social li a span.blabel{
+	font-size: 13px;
+}
+.ps_box_main{
+	border-radius: 0px;
+}
+#dialog-export-entries li,#entries_options,#entries_actions{
+	border-radius: 0px;
+}
+#ec_main_code_content label.choice{
+    font-size: 14px;
+}

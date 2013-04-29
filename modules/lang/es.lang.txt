@@ -1,0 +1,304 @@
+yes=si
+no=non
+Yes=Si
+No=No
+Logout=Desconexion
+Cancel = Anular
+Save = Guardar
+Close=Cerar
+Enter=Entrar
+password = Contraseña
+Password = Contraseña
+I_am = Soy
+male = Chico
+female = Chico
+Continue = Continuar
+password = Contraseña
+Valider = Confirmar
+Home=home
+Homepage=Homepage
+Security=Seguridad
+VIP=VIP
+Events=Eventos
+Save = Guardar
+Delete = Borar
+
+Help=Ayuda
+help=ayuda
+Enterin=Entrar en
+online=conectados
+Config=Configuraci&#243;n
+Name=Nombre
+Motto=Mision
+Lastlogin=Ultima conexion
+Enterhotel=Entrar en el hotel
+Seemore=Saber mas
+Seeless=Saber menos
+GoView = Ir a ver
+Delete = Borar
+error_token = Tu token a expirado o no existe
+Your = Eres
+######################################################
+# Header
+######################################################
+
+
+HelpMe = Ayudame !
+Enterin = Entrar en
+Shop = Tienda
+Community = Comunidad
+online = conectados
+Home = Home	
+MyHomePage = Homepage	
+MyPreferences = Configurací&#243;n
+Events = Eventos
+Buy = Comprar
+BuyRares = 	Rares
+BuyBadges = Placas
+RaresShop = Tienda de rares
+BuyBots = Bots
+
+######################################################
+# Register
+######################################################
+pseudo_prefix = Tu mabbo nombre puede contener lettras (mayusculas y minusculas), numeros y guillones (-). No puede comenzar por OWN-, 0WN-, ADM-, MOD-, M0D-, SOS-, S0S-, XXX-.
+need_mail_register = Necesitamos tu e-mail, por si te olvidas de tu contraseña para volver a enviartela.
+register_password_need = Tu contraseña tiene que tener por lo menos<b> 6 lettras ó numeros</b>.
+password_forgotten_error_password_empty = Por favor entre una nueva contraseña.
+password_forgotten_error_empty_retypedPassword = Por favor rellene el campo de confirmación.
+password_forgotten_error_password_not_egal = Tus contraseñas no coresponden.
+password_forgotten_password_strlen = Tu contraseña tiene que componer mas de 5 lettras ó numeros.
+
+password_forgotten = Contraseña olvidada ?
+password_forgotten_email = Por favor indique su e-mail de inscripción a Mabbo.
+password_forgotten_error_email = Indiqua un e-mail valido y que existe en nustro registro.
+send_email = Enviar un e-mail
+password_forgotten_success = Un mensaje conteniendo un link que te permetera cambiar tu contraseña te ha sido enviado.
+password_forgotten_spam = Si no lo encuentras, ves a ver en tu caja SPAM!
+password_forgotten_other_mail = Otro e-mail
+register_you = Registrate
+it_is_free = es gratis !
+with = via
+confirm_password = Confirmación contraseña
+confirm_password_info = solo para estar seguro..
+register_error_bean = Por favor indique una fecha valida
+register_error_pseudo_prefix = Tu mabbo nombre contiene lettras ó numero prohibidos
+register_error_gender = Por favor indique un sexo
+register_bean_and_gender = Fecha de nacimiento y sexo
+account_details = Detalles de la cuenta
+security_code = Codigo de seguridad
+register_true_bean = Por favor indique tu verdadera fecha de nacimiento
+register_error_email_exist = Este e-mail ya es utilizado.
+register_newsletter = Quiero ser informado de las novedades de mabbo, enviarme un newsletter.
+register_error_pseudo = Por favor indique un mabbo nombre.
+register_error_email = Por favor infique un e-mail.
+register_error_password = Por favor indique una contraseña.
+register_error_passwordConfirm = Por favor indique una contraseña de confimación.
+register_error_min_caracteres = Tu contraseña tiene que componer mas de 5 lettras ó numeros..
+register_error_password_different = Tus contraseñas son diferentes.
+register_error_pseudo_strlen = Tu mabbo nombre es muy largo.
+register_error_pseudo_preg = Solo puedes utilizar lettras, numero ò guillones (-).
+register_error_pseudo_exist = Tu mabbo nombre ya esta utilizado.
+register_error_email_syntaxe = Tu e-mail no es valido.
+register_error_termofservice = Por favor lea y acepte las condiciones de utilización antes de registrarse
+register_error_security = El codigo de seguridad es falso.
+register_error_figurey = Elige un look
+register_look_and_pseudo = Look y Mabbo nombre
+password_forgotten_error_mail_smtp = Un eror esta presente, contacta un administrador.
+I_agree = Acepto las
+conditions_use = Condiciones de utilización
+
+######################################################
+# Login
+######################################################
+login_with_facebook = Entra con facebook
+login_or_create_account = ó crea una cuenta mabbo
+clic_here = Clik aqui
+error_login_pseudo = Indiqua un Mabbo nombre.
+error_login_password = Indiqua una contraseña.
+error_login_wrong = Mabbo nombre ó contraseña incorecta
+EmailForNewPassword = Un mensaje con un link para cambiar de contraseña te ha sido enviado.
+SeeSpam = Si no lo encuentras, ves a ver en tu caja SPAM!
+Fermer = Cerar
+Username = Mabbo nombre
+NeedJavascriptTitle = JavaScript soporte
+NeedJavascript = Javascript esta desactivado en tu navegador. Por favor activelo ò cambie de navegador para utilizar Mabbo :)
+NeedCookiesTitle = Cookies requis
+NeedCookies = Ton navigateur internet refuse les cookies. Pour jouer à Habbo tu dois modifier ce param&egrave;tre et les autoriser.
+NewUser = Nuevo usuario
+UsersOnlineIndex = usuarios!
+StopImmediatly = Si no es el caso, para todo ahora mismo
+StartWithURL = Esta pantalla tiene por objeto de proteger tus informaciones personales del phishing: Verifiqua que el e-mail comienza bien por
+DefineNewPassword = Determinar la contraseña
+NewPassword = Nueva contraseña
+ConfirmeNewPassword = Confirme la nueva contraseña
+MoreThan6Characters = Tu contraseña tiene que tener por lo menos<b> 6 lettras ó numeros</b>.
+
+
+
+######################################################
+# Help
+######################################################
+help_search_consulter = Resultado de busqueda
+
+
+######################################################
+# Me
+######################################################
+ReadNext = Leer mas
+
+Enter_hotel = Entrar en el hotel
+Look_for_first_visit = Elige un look para tu primer visita:
+You_dont_like = No te gusta ninguno ?
+See_more_looks = Ver mas look
+no_panique_you_can_change_after = No paniques podras cambiar tu look mas tarde.
+profile_update_success = Datos guardados.
+
+
+######################################################
+# Profil
+######################################################
+
+Mission = Misión
+Password = Contraseña
+Mission_info = Tu misión aparecera en tu homepage y en tu personaje dentro del client
+Permission_view_online = Quien puede verte conectado :
+Your_status = Tu estado :
+
+
+
+######################################################
+# Account Setting
+######################################################
+AccountSettings = Configuración
+FriendManagement = Gestion de amigos
+LastConnected = Ultima conexion
+Remove=Quitar
+FindAFriend = Buscar un amigo:
+friends = amigos
+See = Ver
+NoFriends = No tienes ningún amigo.
+Previous = Precedente
+Next = Siguiente
+profile_error_last_password = Por favor indique su contraseña anterior.
+profile_error_last_password_correct = Tu contraseña anterior es falsa.
+profile_error_password_fb = És imposible cambiar tu contraseña porque utilizas facebook para conectarte.
+profile_error_new_password_empty = Por favor indique una nueva contraseña.
+profile_error_new_password_strlen = Tu contraseña debe tener 5 dígitos como mínimo.
+profile_error_new_passwordConfirm_empty = Por favor rellene el campo de confirmación de la contraseña.
+profile_error_not_egale = Las contrtaseñas no corresponden.
+ChangePassword = Cambiar contraseña.
+FacebookError = Error Facebook
+ModificationOfPasswordOK = Tu contraseña ha sido cambiada correctamente.
+CompleteThisToChangePassword = Para cambiar de contraseña rellene los campos de abajo.
+OldPassword = Contraseña actual.
+NewPassword = Nueva contraseña.
+ConfirmNewPassword = Confirme la nueva contraseña.
+
+######################################################
+# Home
+######################################################
+Widgets = Widgets
+Images = Imagenes	
+Background = Fondo de pantalla
+Note = Nota
+MyBadges = Mis placas
+AboutMyBadges = Visualizar placas en la pagina.
+Traxplayer = Traxplayer
+AboutTraxplayer = Escucha tu mabbomúsica en la home.
+MyRooms = Mis salas.
+Book = Libro de oro
+MyGroups = Mis groupos
+MyFriends = Mis amigos
+Loading = Cargando
+NoteStyle = Estilo de nota
+MyProfil = Perfil
+Bubble = Burbuja
+Notepad = Calepin
+Golden = Dorado
+Default = Generico
+Pink = HC rosa
+Techno = HC Techno
+Metal = Metal
+Noteit = piensatontos
+Naked = Transparente
+Add = Añadir
+SomeHomePageRandom = Homes al azar…
+HomeIsDeactivate = La home de este usuario esta desactivada.
+MayBeTheUserIsBan = Parece que el usuario de esta home esta baneado!
+
+Myprofile = Mi perfil
+Inventory = Inventario
+Terminer = Terminar
+Pictures = Imagenes
+Background = Fondo de pantalla
+LinkYoutube = Link de youtube
+Add = Añadir
+Colors = Colores
+Red = Rojo
+Blue = Azul
+Green  = Verde
+Pink = Rosa
+
+Size = Medida
+Small = Pequeño
+Medium = Mediano
+Large = Grande
+
+Edit = Modificar
+Finish = Terminar
+MyProfile = Mi perfil
+Badges = Placas
+TraxPlayer = TRAXPLAYER
+MyRooms = Mis salas.
+AddMessage = Añadir un mensaje.
+HabboCreated = Mabbo creado el : 
+
+######################################################
+# Shop
+######################################################
+
+BadgesShop = Tienda de placas.
+Success_new_badge = Tu compra ha sido confirmada. !
+YouHaveBadge = Ya tienes esta placa.
+YouHaveNoEnough = Tu no tienes bastante de 
+
+ConfirmBuyCredits = Confirmación de la compra
+DetailsBuy = Detalles de la compra
+Product = Productos
+Amount = Precio
+ForTheAccount = Para la cuenta 
+HaveVoucher = Si has obtenido otro código por la medida de pago de abajo ingrésalo aquí. 
+Exchange = Cambiar.
+
+Success_get_coins = ¡Felicidades! Has recibido tus
+Error_buy = Ha ocurrido un error
+ConfirmBuy = ¿ Confirmas esta compra ?
+SelectPaiement = Tienes que elegir un modo de pago.
+
+YouHaveNoRooms = ¡ No tienes salas !
+SuccessWinWin = ¡ Felicidades ! ¡ Has recibido tus puntos de recompensa !
+BuyWinWins = Puntos recompensa
+
+
+######################################################
+# Staff
+######################################################
+
+Administrators = Administradores
+Founders = Creadores
+Moderators = Moderadores
+Staff = Staff
+SuperHobba = Super Hobba
+
+
+######################################################
+# Sécurité 
+######################################################
+
+
+Securite = Seguridad
+HabboAttitude = Mabbo 
+ConseilsSecurity = Conseils de s&eacute;curit&eacute;
+CentreSecurity = Centre de s&eacute;curit&eacute;
+Signalerdesabus = Signal des abus

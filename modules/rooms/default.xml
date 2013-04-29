@@ -1,0 +1,24 @@
+<room id="default">
+	<roomdata>
+		<roomtype>private</roomtype>
+		<caption>caption</caption>
+		<model_name>model_b</model_name>
+		<description>Desc</description>
+	</roomdata>
+	<roomitem>
+		<item>
+			<base_item>140</base_item>
+			<x>8</x>
+			<y>1</y>
+			<z>0</z>
+			<rot>0</rot>
+		</item>
+		<item>
+			<base_item>904</base_item>
+			<x>4</x>
+			<y>10</y>
+			<z>0</z>
+			<rot>6</rot>
+		</item>
+	</roomitem>
+</room>

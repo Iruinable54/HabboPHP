@@ -1,0 +1,139 @@
+#tab_add_field,#tab_field_properties,#tab_form_properties {padding: 0px;}
+#builder_tabs {
+	padding: 0px;
+	border: none;
+	background:none;
+	font-size: 12px;
+	font-family:'Trebuchet MS','Lucida Grande',Tahoma,Arial,sans-serif;
+}
+#builder_tabs ul.ui-widget-header{
+	background: none;
+	border: none;
+}
+#btn_add_field{
+	background:none repeat scroll 0 0 #f9f9f9;
+	margin-left: 13px;
+}
+#btn_add_field.ui-state-active,#btn_add_field.ui-state-default{
+	border: none;
+}
+#btn_field_properties{
+	background:none repeat scroll 0 0 #fff;
+}
+#btn_field_properties.ui-state-active,#btn_field_properties.ui-state-default{
+	border: none;
+}
+#btn_form_properties{
+	background:none repeat scroll 0 0 #fff;
+}
+#btn_form_properties.ui-state-active,#btn_form_properties.ui-state-default{
+	border: none;
+}
+.ui-tabs .ui-tabs-nav { margin: 0; padding: 0; }
+#all_form_properties a:link,#all_form_properties a:visited,#all_form_properties a:hover,
+#all_properties a:link,#all_properties a:visited,#all_properties a:hover{
+	color: #B38B01;
+	text-decoration: none;
+	border-bottom: 1px dashed;
+}
+
+.ui-dialog{
+	border:3px solid #000;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 0px;
+	font-family:"Lucida Grande",Tahoma,Arial,Verdana,sans-serif;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+	display: none;
+}
+.ui-dialog .ui-dialog-buttonpane {
+	background-color: #fff;
+	margin: 0px;
+	border: none;
+}
+.ui-dialog p,.ui-dialog form {
+	font-size: 90%;
+}
+.ui-dialog form label{
+	font-weight: bold;
+	font-family:"Lucida Grande",Tahoma,Arial,Verdana,sans-serif;
+}
+.ui-dialog .ui-dialog-titlebar {
+	-moz-border-radius: 13px 13px 0px 0px;
+	-webkit-border-radius: 13px 13px 0px 0px;
+	border-radius: 13px 13px 0px 0px;
+	text-align: center;
+	background: none;
+	background-color: #fff;
+	border: none;
+}
+.ui-dialog .ui-dialog-buttonpane{
+	-moz-border-radius: 0px 0px 13px 13px;
+	-webkit-border-radius: 0px 0px 13px 13px;
+	border-radius: 0px 0px 13px 13px;
+	background-color: #EDEDED;
+    border-top: 1px solid #CACACA;
+    padding-top: 10px;
+}
+
+#ui-dialog-title-dialog-message,#ui-dialog-title-dialog-warning,
+#ui-dialog-title-dialog-confirm-field-delete,#ui-dialog-title-dialog-insert-choices,
+#ui-dialog-title-dialog-insert-matrix-rows,#ui-dialog-title-dialog-insert-matrix-columns,
+#ui-dialog-title-dialog-delete-theme,#ui-dialog-title-dialog-confirm-form-delete,
+#ui-dialog-title-dialog-confirm-entry-delete,#ui-dialog-title-dialog-change-password,
+#ui-dialog-title-dialog-change-license{	
+	color:#BD3D20;
+	font-size:150%;
+	font-weight:400;
+	text-align: center;
+}
+#dialog-message,#dialog-warning,#dialog-confirm-field-delete,
+#dialog-delete-theme,#dialog-confirm-form-delete,#dialog-confirm-entry-delete {
+	text-align: center;
+}
+#dialog-message img,#dialog-warning img,#dialog-confirm-field-delete img,
+#dialog-delete-theme img,#dialog-confirm-form-delete img,
+#dialog-confirm-entry-delete img{
+	padding-top: 10px; padding-bottom: 25px;
+}
+
+.ui-dialog .ui-dialog-title{
+	float: none;
+	color:#BD3D20;
+	font-size:150%;
+	font-weight:400;
+	text-align: center;
+	margin: 0px;
+}
+.ui-state-highlight{
+	border: 1px dashed #FF9F80 !important;
+	height: 30px;
+}
+.ui-widget-overlay{
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { 
+	float: left;
+	padding-left: 15px;
+}
+.ui-dialog .ui-dialog-content{
+	background-color: #fff;
+}
+.ui-menu .ui-menu-item a.ui-state-hover{
+	background-image: none;
+	background-color: #FFB8A1;
+	border: 1px solid white;
+}
+.ui-autocomplete{
+	font-family: 'Trebuchet MS', Arial, Helvetica;
+	font-size: 100%;
+
+	max-height: 200px;
+	overflow-y: auto;
+
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+	/* add padding to account for vertical scrollbar */
+	padding-right: 20px;
+}

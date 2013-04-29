@@ -1,0 +1,16 @@
+INSTALLATION
+============
+
+For the most up to date installation instructions go to: 
+
+http://www.appnitro.com/installation
+
+
+
+
+UPGRADING
+=========
+
+If you are upgrading from version 2 to version 3 go to: 
+
+http://www.appnitro.com/upgrading-machform

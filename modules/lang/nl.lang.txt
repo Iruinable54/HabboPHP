@@ -1,0 +1,304 @@
+yes=ja
+no=nee
+Yes=Yes
+No=Nee
+Logout=Uitloggen
+Cancel = Annuleren
+Save = Opslaan
+Close=Sluiten
+Enter=Log in
+password = Wachtwoord
+Password = Wachtwoord
+I_am = Ik ben een.
+male = Jongen
+female = Meisje
+Continue = Verder
+password = Wachtwoord
+Valider = Bevestigen
+Home=Welkom
+Homepage=Home
+Security=Veiligheid
+VIP=VIP
+Events=Event
+Save = Opslaan
+Delete = Verwijderen
+
+Help=Help
+help=Help
+Enterin=Naar Hablo
+online=Online
+Config=Paramètres
+Name=Naam
+Motto=Missie
+Lastlogin=Laatste Login
+Enterhotel=Naar Hablo Hotel
+Seemore=Meer
+Seeless=Minder
+GoView = Bezoek
+Delete = Verwijderen
+error_token = De Naam of wachtwoord is verkeerd of bestaad niet.
+Your = Uw
+######################################################
+# Header
+######################################################
+
+
+HelpMe = Help
+Enterin = Naar
+Shop = Shop
+Community = Community
+online = Online
+Home = Home
+MyHomePage = Mijn pagina
+MyPreferences = Instellingen
+Events = Event
+Buy = Kopen
+BuyRares = 	Rares
+BuyBadges = Badges
+RaresShop = Rares Winkel
+BuyBots = Bots
+
+######################################################
+# Register
+######################################################
+pseudo_prefix = Uw gebruikersnaam voor het spel!
+need_mail_register = Je hebt dit <b>e-mailadres</b> later weer nodig om in te loggen. Gebruik dus een echt adres.
+register_password_need = Je wachtwoord moet meer dan <b>6 tekens</b> lang zijn en <b>letters en cijfers</b> bevatten.
+password_forgotten_error_password_empty = Uw wachtwoord komt niet overeen!
+password_forgotten_error_empty_retypedPassword = Merci de remplir le mot de passe de confirmation.
+password_forgotten_error_password_not_egal = Uw wachtwoorden komen niet overeen.
+password_forgotten_password_strlen = Uw wachtwoord moet meer doen dan 5 karakters.
+
+password_forgotten = Wachtwoord vergeten?
+password_forgotten_email = Vul hier je e-mailadres van je Hablo account in:
+password_forgotten_error_email = Indique une adresse email valide et qui existe dans notre base de donn&eacute;e.
+send_email = Verstuur e-mail
+password_forgotten_success = Un message contenant un lien te permettant de changer ton mot de passe t'a &eacute;t&eacute; envoy&eacute; par email.
+password_forgotten_spam = Si tu ne le trouves pas, jette un œil à ta boîte spam!
+password_forgotten_other_mail = Autre adresse email
+register_you =Een Hablo
+it_is_free = aan temaken !
+with = via
+confirm_password = Vul nogmaals je wachtwoord in
+confirm_password_info = voor de zekerheid ...
+register_error_bean = Type alsjeblieft een geldige datum
+register_error_pseudo_prefix = Ton pseudo contient des mots interdit.
+register_error_gender = Klik alsjeblieft een geldige geslacht aan
+register_bean_and_gender = Geboortedatum en geslacht
+account_details = Gegevens
+security_code = Veiligheidscheck
+register_true_bean = Vul alsjeblieft je echte geboortedatum in
+register_error_email_exist = Je mailadres bestaat al.
+register_newsletter = Ik wil graag geïnformeerd worden over het nieuws in Habbo en ontvang graag de habbo nieuwsbrief.
+register_error_pseudo = Vul alsjeblieft een geldige gebruikersnaam in..
+register_error_email = Vul alsjeblieft een geldig mailadres in.
+register_error_password = Wachtwoord
+register_error_passwordConfirm = Type opnieuw je wachtwoord in
+register_error_min_caracteres = Uw wachtwoord moet minimaal 6 letters lang zijn!
+register_error_password_different = De wachtwoorden komen niet met elkaar overeen
+register_error_pseudo_strlen = Uw gebruikersnaam is te lang!
+register_error_pseudo_preg = U heeft alleen recht om letters, cijfers.
+register_error_pseudo_exist = Uw gebruikersnaam is al in gebruik
+register_error_email_syntaxe = Ton adresse mail n'est pas valide.
+register_error_termofservice = Je moet de Algemene Voorwaarden accepteren voor je verder kunt.
+register_error_security = De beveiligingscode is verkeerd
+register_error_figurey = Kies een look
+register_look_and_pseudo = Look et Pseudo
+password_forgotten_error_mail_smtp = Er is een fout opgetreden. Neem contact op met de beheerder
+I_agree = Ik begrijp en ga akkoord met de 
+conditions_use = Algemene voorwaarden
+
+######################################################
+# Login
+######################################################
+login_with_facebook = Login met Facebook
+login_or_create_account = Of maak een Habbo account
+clic_here = Klik hier om
+error_login_pseudo = Vul je e-mailadres in
+error_login_password = Vul je wachtwoord in
+error_login_wrong = Onjuist wachtwoord. Problemen met inloggen? Check hier de mogelijke oplossingen.
+EmailForNewPassword = Een bericht met de link om u wachtwoord te wijzigen is verzonden naar uw e-mail
+SeeSpam = Als u niks kan vinden kijk in uw spam-box!
+Fermer = Sluit
+Username = Naam
+NeedJavascriptTitle = Je hebt java nodig om dit spel te doen!
+NeedJavascript = Java is uitgescakeld of onbreekt in uw browser. Actieveer hem of upgrade naar de nieuwste versie!
+NeedCookiesTitle = Je cookies moeten aan staan!
+NeedCookies = Uw cookies staan uit! Zet ze aan om Hablo te spelen!
+NewUser = Nieuw hier?
+UsersOnlineIndex = spelers binnen
+StopImmediatly = Indien dit niet het geval is, Stop alles direct
+StartWithURL = Dit scherm is bedoel om uw persoonlijke informatie te beschermen tegen phishing. Controleer of het bovenstaande aderes begint met :
+DefineNewPassword = Stel een wachtwoord in!
+NewPassword = Nieuw wachtwoord
+ConfirmeNewPassword = Bevestig het nieuwe wachtwoord
+MoreThan6Characters = Uw wachtwoord moet minimaal <b>6 tekens</b> en bestaan ​​uit <b>letters en cijfers</b>
+
+
+
+######################################################
+# Help
+######################################################
+help_search_consulter = Zoekresultaat
+
+
+######################################################
+# Me
+######################################################
+ReadNext = Lees verder
+
+Enter_hotel = Stap het Hotel binnen.
+Look_for_first_visit = Kies een fijne outfit:
+You_dont_like = Zit jouw smaak hier niet tussen?
+See_more_looks = Zoek meer styles.
+no_panique_you_can_change_after = Geen zorgen... deze look valt later nog aan te passen.
+profile_update_success = Je profiel is succes vol geupdate.
+
+
+######################################################
+# Profil
+######################################################
+
+Mission = Mijn voorkeuren
+Password = Wachtwoord
+Mission_info = Andere Hablo's zien je status op je Hablo Home en in het hotel. 
+Permission_view_online = Wie mag zien of je online bent:
+Your_status = Je Hablo status :
+
+
+
+######################################################
+# Account Setting
+######################################################
+AccountSettings = Account instellingen
+FriendManagement = Mijn vriendenlijst
+LastConnected = laatste login
+Remove=Verwijderen
+FindAFriend = Zoek je vrienden:
+friends = Vrienden per pagina
+See = 
+NoFriends = Je hebt geen vrienden.
+Previous = Vorige
+Next = Volgende
+profile_error_last_password = U heeft geen oud wachtwoord in gevult!
+profile_error_last_password_correct = Uw oud wachtwoord klopt niet.
+profile_error_password_fb = Uw wachtwoord wijzigen is niet mogelijk omdat u gebruik maak van Facebook!
+profile_error_new_password_empty = U heeft geen nieuw wachtwoord in gevult!
+profile_error_new_password_strlen = Het nieuwe wachtwoord heeft minimaal 6 leters nodig!
+profile_error_new_passwordConfirm_empty = De bevestig wachtwoord klopt niet?
+profile_error_not_egale = De twee wachtwoorden komen niet met elkaar overeen
+ChangePassword = Wachtwoord wijzigen
+FacebookError = Facebook error.....
+ModificationOfPasswordOK = Je wachtwoord is succesvol gewijzigd!
+CompleteThisToChangePassword = Om uw wachtwoord te wijzigen, vul dan de onderstaande velden in.
+OldPassword = Huidig ​​wachtwoord
+NewPassword = Nieuw wachtwoord:
+ConfirmNewPassword = Bevestig het nieuwe wachtwoord
+
+######################################################
+# Home
+######################################################
+Widgets = Widgets
+Images = Plaatjes
+Background = Achtergrond
+Note = Note
+MyBadges = Mijn Badges
+AboutMyBadges = Over mijn badges
+Traxplayer = Traxplayer
+AboutTraxplayer = Trax player is een Trax :D
+MyRooms = Mijn kamers
+Book = Gastenboek
+MyGroups = Mijn Groepen
+MyFriends = Mijn Vrienden
+Loading = Laden
+NoteStyle = Note Style
+MyProfil = Mijn Profiel
+Bubble = Bubble
+Notepad = Notities
+Golden = Goud
+Default = Default
+Pink = HC Pink
+Techno = HC Techno
+Metal = Metal
+Noteit = Noteit
+Naked = Transparant
+Add = Toevoegen
+SomeHomePageRandom = Willekeurige Pagina
+HomeIsDeactivate = De home van deze gebruiker is uitgeschakeld
+MayBeTheUserIsBan = De eigenaar van deze homepagina heeft hem verborgen
+
+Myprofile = Mijn profiel
+Inventory = Inventaris
+Terminer = Klaar
+Pictures = Foto's
+Background = Achtergrond
+LinkYoutube = Link naar Youtube
+Add = Toevoegen
+Colors = Kleuren
+Red = Rood
+Blue = Blauw
+Green  = Groen
+Pink = Roze
+
+Size = Grootte
+Small = Klein
+Medium = Medium
+Large = Groot
+
+Edit = Edit
+Finish = Klaar
+MyProfile = Mijn Profiel
+Badges = Badges
+TraxPlayer = TRAXPLAYER
+MyRooms = Mijn kamers
+AddMessage = Add bericht
+HabboCreated = Lid sinds
+
+######################################################
+# Shop
+######################################################
+
+BadgesShop = Badge Winkel
+Success_new_badge = Je hebt de badge gekocht!
+YouHaveBadge = Je hebt de badge al!
+YouHaveNoEnough = Je hebt niet genoeg 
+
+ConfirmBuyCredits = Je hebt de credits gekocht!
+DetailsBuy = Je krijgt meer credits per 15 minuten als je VIP bent!
+Product = Produits 
+Amount = Hoeveel
+ForTheAccount = Pour le compte 
+HaveVoucher = Heb je een credits code gekregen? vul hem hier in!
+Exchange = Klaar
+
+Success_get_coins = Je hebt de credits gekocht!
+Error_buy = Er is wat mis gegaan
+ConfirmBuy = Je hebt het gekocht
+SelectPaiement = Kies een betaalings methode!
+
+YouHaveNoRooms = Je hebt geen kamers
+SuccessWinWin = Je hebt de kamer gekocht!
+BuyWinWins = WinWin
+
+
+######################################################
+# Staff
+######################################################
+
+Administrators = Administrator
+Founders = Eigenaar
+Moderators = Moderator
+Staff = Proef moderator
+SuperHobba = Expert
+
+
+######################################################
+# Sécurité 
+######################################################
+
+
+Securite = Safety
+HabboAttitude = Safety Tips
+ConseilsSecurity = De Habbo Regels
+CentreSecurity = Gids voor ouders
+Signalerdesabus = Safety Centrum

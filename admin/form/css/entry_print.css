@@ -1,0 +1,60 @@
+body {
+	background: none !important;
+	margin: 0px !important;
+	padding: 0px !important;
+	font-size : 9pt !important;
+	overflow-y : visible !important;
+	font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+	line-height: 1.5;  
+	color: #000 !important;
+}
+#header,#footer,#navigation,#bottom_shadow{
+	display: none !important;
+}
+#main{
+	border: 0px !important;
+	padding: 0px !important;
+	background-color: #fff !important;
+}
+#ve_details{
+	width: 100% !important;
+	float: none !important;
+}
+#ve_actions{
+	display: none !important;
+}
+.content_header_title{
+	border-bottom: 0px !important;	
+}
+.content_header_title p{
+	display: none !important;
+}
+.breadcrumb{
+	border-bottom: none !important;
+	color: #000 !important;
+	text-decoration: none;
+	font-weight: normal;
+}
+.content_header_title h2{
+	font-weight: normal !important;
+}
+#ve_a_entries, #ve_a_next{
+	display: none !important;
+}
+#ve_details .alt{
+	background-color: #fff !important;
+}
+.view_entry .content_body{
+	overflow: inherit !important;
+}
+#ve_detail_table td,#ve_table_info td {
+    border-bottom: 1pt solid #DEDEDE;
+    padding: 5px;
+}
+#ve_table_info{
+	margin-top: 25px !important;
+}
+.entry_link{
+	text-decoration: none !important;
+	color: #000 !important;
+}
