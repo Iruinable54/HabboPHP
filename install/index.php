@@ -17,7 +17,7 @@ if(file_exists("../includes/settings.inc.php")){
 	while ($row = mysql_fetch_array($req)) { $d[] =  $row[0]; }
 
 	if(in_array('habbophp_config',$d)){
-		//die( 'Votre base de donn&eacute;e  contient  des tables de HabboPHP. Videz votre DB pour refaire une installation') ;
+		die( 'Votre base de donn&eacute;e  contient  des tables de HabboPHP. Videz votre DB pour refaire une installation') ;
 	}
 }
 
@@ -171,6 +171,8 @@ $(function(){
 	});
 });
 </script>
-<i style="font-size:10px;">Installateur de Wordpress</i>
+<center>
+<i style="font-size:10px;text-align:center;">Installateur de Wordpress</i>
+</center>
 </body>
 </html>

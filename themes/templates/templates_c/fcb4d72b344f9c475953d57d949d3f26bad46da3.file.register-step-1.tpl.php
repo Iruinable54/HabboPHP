@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2013-07-01 15:23:55
+<?php /* Smarty version Smarty-3.1.8, created on 2013-07-02 10:51:52
          compiled from "/Applications/MAMP/htdocs/HabboPHP/themes/templates/register-step-1.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:149069462151d182eb1f0916-01156093%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:69765879451d294a83ed458-96606678%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '149069462151d182eb1f0916-01156093',
+  'nocache_hash' => '69765879451d294a83ed458-96606678',
   'function' => 
   array (
   ),
@@ -23,9 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_51d182eb27ada6_78866956',
+  'unifunc' => 'content_51d294a84749b0_72604249',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51d182eb27ada6_78866956')) {function content_51d182eb27ada6_78866956($_smarty_tpl) {?><script type="text/javascript">
+<?php if ($_valid && !is_callable('content_51d294a84749b0_72604249')) {function content_51d294a84749b0_72604249($_smarty_tpl) {?><script type="text/javascript">
 function changeGender(gender){
      document.getElementById("avatarGender").value = gender ;
      if(gender == 'M'){

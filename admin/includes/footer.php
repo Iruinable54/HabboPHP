@@ -68,6 +68,17 @@ $(document).ready(function(){
 	
 });
 
+function  addNotif(){
+	var titre = $('#n_titre').val();
+	var contenu = $('#n_contenu').val();
+	if(titre == ''){alert('Need Titre'); return false;}
+	$.post('ajax/addNotif.php',{titre:titre,contenu:contenu},function(data){
+		$('#n_titre').val(" ");
+		$('#n_contenu').val(" ");
+		$('#notifm').modal();
+	});
+}
+
 
 function addRareManage(){
 	var oid = 	$('#oidRare').val();

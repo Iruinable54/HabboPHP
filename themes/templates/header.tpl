@@ -15,7 +15,11 @@ var andSoItBegins = (new Date()).getTime();
 <meta name="generator" content="HabboPHP"/>
 <link rel="stylesheet" href="{$config->url_site}/web-gallery/styles/common.css" type="text/css" />
 <link rel="stylesheet" href="{$config->url_site}/web-gallery/styles/fr.css" type="text/css" />
-
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+  $.noConflict();
+  // Code that uses other library's $ can follow here.
+</script>
 <!--Start Javascript-->
 <script src="{$config->url_site}/web-gallery/js/libs2.js" type="text/javascript"></script>
 <script src="{$config->url_site}/web-gallery/js/visual.js" type="text/javascript"></script>
@@ -27,6 +31,7 @@ var andSoItBegins = (new Date()).getTime();
 <script src="{$config->url_site}/web-gallery/js/homeedit.js" type="text/javascript"></script>
 <script src="{$config->url_site}/web-gallery/js/homeview.js" type="text/javascript"></script>
 <script src="{$config->url_site}/web-gallery/js/homeauth.js" type="text/javascript"></script>
+<script src="{$config->url_site}/themes/assets/js/jquery.gritter.min.js" type="text/javascript"></script>
 
 <!--End Javascript-->
 
@@ -40,6 +45,7 @@ var andSoItBegins = (new Date()).getTime();
 <link rel="stylesheet" href="{$config->url_site}/web-gallery/styles/cbs2credits.css" type="text/css"/>
 <link rel="stylesheet" href="{$config->url_site}/web-gallery/styles/newcredits.css" type="text/css"/>
 <link rel="stylesheet" href="{$config->url_site}/web-gallery/styles/lightweightmepage.css" type="text/css" />
+<link rel="stylesheet" href="{$config->url_site}/themes/assets/css/jquery.gritter.css" type="text/css" />
 <!--End Stylesheet-->
 <link rel="stylesheet" href="{$config->url_site}/web-gallery/styles/group.css" type="text/css" />
 
@@ -82,6 +88,24 @@ HabboClient.maximizeWindow = true;
 }
 </script> 
 -->
+<script type="text/javascript"> 
+var andSoItBegins = (new Date()).getTime();
+var ad_keywords = "";
+document.habboLoggedIn = true;
+var habboName = "";
+var habboId = 134512;
+var facebookUser = false;
+var habboReqPath = "{$config->url_site}/modules";
+var habboStaticFilePath = "{$config->url_site}/web-gallery";
+var habboImagerUrl = "http://www.habbo.com/habbo-imaging/";
+var habboPartner = "";
+var habboDefaultClientPopupUrl = "{$config->url_site}/client";
+window.name = "habboMain";
+if (typeof HabboClient != "undefined") {
+HabboClient.windowName = "57a07a19b77f0d8ced3676b28bff848bd33560a3";
+HabboClient.maximizeWindow = true;
+}
+</script> 
 <style type="text/css">
 
     #playground, #playground-outer {
@@ -122,8 +146,8 @@ body { behavior: url(/js/csshover.htc); }
 <div id="subnavi"> 
 			<div id="subnavi-user"> 
 				<ul> 
-					<li id="myfriendsNOT"><a href="#"><span>Mes Amis</span></a><span class="r"></span></li> 
-					<li id="mygroupsNOT" class=""><a href="#"><span>Mes Groupes</span></a><span class="r"></span></li> 
+					<li id="myfriends"><a href="#"><span>Mes Amis</span></a><span class="r"></span></li> 
+					<li id="mygroups" class=""><a href="#"><span>Mes Groupes</span></a><span class="r"></span></li> 
 					<li id="myrooms"><a href="#"><span>Mes Apparts</span></a><span class="r"></span></li> 
 				</ul> 
 						</div> 
@@ -252,4 +276,25 @@ body { behavior: url(/js/csshover.htc); }
  {/if}
 </div>
 <!--Ne pas supprimer se input -->
+<script>
+function get(){
+	jQuery.extend(jQuery.gritter.options, { 
+        position: 'bottom-left', // defaults to 'top-right' but can be 'bottom-left', 'bottom-right', 'top-left', 'top-right' (added in 1.7.1)
+        //fade_in_speed: 'medium', // how fast notifications fade in (string or int)
+        //fade_out_speed: 2000, // how fast the notices fade out
+		//time: 10000 // hang on the screen for...
+	});
+	jQuery.get('{$config->url_site}/ajax/notif.php',function(data){
+	if(data){
+		jQuery.gritter.add({
+			title: data.title,
+			text: data.text,
+			image : data.image,
+			time: 5000,
+		});
+	}
+	},"json");
+}
+setInterval('get()', 5000);
+</script>
 <input type="hidden" value="{if isset($token)}{$token}{/if}" id="token"/>

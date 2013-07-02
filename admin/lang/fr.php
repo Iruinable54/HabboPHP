@@ -327,5 +327,6 @@ $lang=array(
 	"WelcomeMessage" => "Message d'index",
 	"WelcomeMessageInfo" => "Personnalisez le message d'accueil de votre site",
 	"IndexDescMessage" => "Index information",
-	"IndexDescMessageInfo" => "Bouton index : Dis-m'en plus.."
+	"IndexDescMessageInfo" => "Bouton index : Dis-m'en plus..",
+	"SendNotif" => "Envoyer une notification"
  );

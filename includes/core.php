@@ -77,6 +77,8 @@ if(!defined('SETTINGS'))
 
 require	$path.'class/html_dom.php' ;
 
+require	$path.'class/cookie.class.php' ;
+
 require	$path.'class/class.config.php' ;
 
 require	$path.'class/class.mysql.php' ;

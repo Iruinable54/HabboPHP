@@ -9,6 +9,7 @@ include "includes/header.php";
     <ul class="nav nav-pills">
       <?php if(Tools::checkACL($user->rank,ACL_SITE_NEWS)) { ?><li><a href="#postnews"><?php echo $lang['PostNews']; ?></a></li><?php } ?>
       <?php if(Tools::checkACL($user->rank,ACL_SITE_NEWS)) { ?><li><a href="#gnews"><?php echo $lang['ManageNews']; ?></a></li><?php } ?>
+     <?php if(Tools::checkACL($user->rank,ACL_SITE_NOTIF)) { ?><li><a href="#notif">Notifications</a></li><?php } ?>
        <?php if(Tools::checkACL($user->rank,ACL_SITE_ADS)) { ?><li><a href="#ads"><?php echo $lang['Ads']; ?></a></li><?php } ?>
        <?php if(Tools::checkACL($user->rank,ACL_SITE_CONFIG)) { ?><li><a href="#configs"><?php echo $lang['BaseConfiguration']; ?></a></li><?php } ?>
        <?php if(Tools::checkACL($user->rank,ACL_SITE_CONFIG_MAIL)) { ?><li><a href="#mail"><?php echo $lang['MailConfig']; ?></a></li><?php } ?>
@@ -23,6 +24,15 @@ include "includes/header.php";
   </div>
   <div class="modal-body">
     <p><?php echo $lang['LoadingNewsInfo']; ?></p>
+  </div>
+</div>
+
+<div class="modal hide fade" id="notifm">
+  <div class="modal-header">
+    <h3>It's OK :)</h3>
+  </div>
+  <div class="modal-body">
+    <p>Notification envoyées !</p>
   </div>
 </div>
 
@@ -202,7 +212,28 @@ include "includes/header.php";
   </div><!--/row-->
 </section><?php } ?>
 
+<?php if(Tools::checkACL($user->rank,ACL_SITE_NOTIF)) {  ?>
+<section id="notif">
+  <div class="page-header">
+    <h1><?php echo $lang['SendNotif']; ?></h1>
+    <small>Attendre 30 secondes entre les notifications</small>
+  </div>
+ 
+  <div class="row">
 
+     <div class="span9">
+      <div class="well">
+       <label>Titre : </label> <input type="text" class="span3" name="n_titre'" id="n_titre" >
+        <br/>
+        <label>Contenu : </label> <input type="text" class="span6" name="n_contenu" id="n_contenu">
+		<br/>
+        <button type="button" onclick="addNotif();" class="btn">Envoyer</button>
+      </div>
+    </div>
+  </div>
+  
+  </section>
+<?php } ?>
 
 <?php if(Tools::checkACL($user->rank,ACL_SITE_ADS)) { ?>
 <section id="ads">
@@ -655,4 +686,5 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js"&gt;
   
 </section>
 <?php } ?>
+
 <?php include "includes/footer.php"; ?>

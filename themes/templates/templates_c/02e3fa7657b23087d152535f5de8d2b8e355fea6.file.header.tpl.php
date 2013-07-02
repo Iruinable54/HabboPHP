@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2013-07-01 15:24:10
+<?php /* Smarty version Smarty-3.1.8, created on 2013-07-02 19:46:33
          compiled from "/Applications/MAMP/htdocs/HabboPHP/themes/templates/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:146034344251d182fa831ce9-66444026%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:108837101751d311f934c091-71410496%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '02e3fa7657b23087d152535f5de8d2b8e355fea6' => 
     array (
       0 => '/Applications/MAMP/htdocs/HabboPHP/themes/templates/header.tpl',
-      1 => 1372518445,
+      1 => 1372772468,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '146034344251d182fa831ce9-66444026',
+  'nocache_hash' => '108837101751d311f934c091-71410496',
   'function' => 
   array (
   ),
@@ -27,9 +27,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_51d182fac25dd4_79543784',
+  'unifunc' => 'content_51d311f9729b17_53765386',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51d182fac25dd4_79543784')) {function content_51d182fac25dd4_79543784($_smarty_tpl) {?><?php  $_config = new Smarty_Internal_Config(($_smarty_tpl->tpl_vars['lang_dir']->value)."/".($_smarty_tpl->tpl_vars['lang']->value).".lang", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars(null, 'local'); ?> 
+<?php if ($_valid && !is_callable('content_51d311f9729b17_53765386')) {function content_51d311f9729b17_53765386($_smarty_tpl) {?><?php  $_config = new Smarty_Internal_Config(($_smarty_tpl->tpl_vars['lang_dir']->value)."/".($_smarty_tpl->tpl_vars['lang']->value).".lang", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars(null, 'local'); ?> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
@@ -51,7 +51,11 @@ var andSoItBegins = (new Date()).getTime();
 /web-gallery/styles/common.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
 /web-gallery/styles/fr.css" type="text/css" />
-
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+  $.noConflict();
+  // Code that uses other library's $ can follow here.
+</script>
 <!--Start Javascript-->
 <script src="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
 /web-gallery/js/libs2.js" type="text/javascript"></script>
@@ -73,6 +77,8 @@ var andSoItBegins = (new Date()).getTime();
 /web-gallery/js/homeview.js" type="text/javascript"></script>
 <script src="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
 /web-gallery/js/homeauth.js" type="text/javascript"></script>
+<script src="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
+/themes/assets/js/jquery.gritter.min.js" type="text/javascript"></script>
 
 <!--End Javascript-->
 
@@ -95,6 +101,8 @@ var andSoItBegins = (new Date()).getTime();
 /web-gallery/styles/newcredits.css" type="text/css"/>
 <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
 /web-gallery/styles/lightweightmepage.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
+/themes/assets/css/jquery.gritter.css" type="text/css" />
 <!--End Stylesheet-->
 <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
 /web-gallery/styles/group.css" type="text/css" />
@@ -141,6 +149,27 @@ HabboClient.maximizeWindow = true;
 }
 </script> 
 -->
+<script type="text/javascript"> 
+var andSoItBegins = (new Date()).getTime();
+var ad_keywords = "";
+document.habboLoggedIn = true;
+var habboName = "";
+var habboId = 134512;
+var facebookUser = false;
+var habboReqPath = "<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
+/modules";
+var habboStaticFilePath = "<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
+/web-gallery";
+var habboImagerUrl = "http://www.habbo.com/habbo-imaging/";
+var habboPartner = "";
+var habboDefaultClientPopupUrl = "<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
+/client";
+window.name = "habboMain";
+if (typeof HabboClient != "undefined") {
+HabboClient.windowName = "57a07a19b77f0d8ced3676b28bff848bd33560a3";
+HabboClient.maximizeWindow = true;
+}
+</script> 
 <style type="text/css">
 
     #playground, #playground-outer {
@@ -186,8 +215,8 @@ body { behavior: url(/js/csshover.htc); }
 <div id="subnavi"> 
 			<div id="subnavi-user"> 
 				<ul> 
-					<li id="myfriendsNOT"><a href="#"><span>Mes Amis</span></a><span class="r"></span></li> 
-					<li id="mygroupsNOT" class=""><a href="#"><span>Mes Groupes</span></a><span class="r"></span></li> 
+					<li id="myfriends"><a href="#"><span>Mes Amis</span></a><span class="r"></span></li> 
+					<li id="mygroups" class=""><a href="#"><span>Mes Groupes</span></a><span class="r"></span></li> 
 					<li id="myrooms"><a href="#"><span>Mes Apparts</span></a><span class="r"></span></li> 
 				</ul> 
 						</div> 
@@ -366,5 +395,27 @@ body { behavior: url(/js/csshover.htc); }
  <?php }?>
 </div>
 <!--Ne pas supprimer se input -->
+<script>
+function get(){
+	jQuery.extend(jQuery.gritter.options, { 
+        position: 'bottom-left', // defaults to 'top-right' but can be 'bottom-left', 'bottom-right', 'top-left', 'top-right' (added in 1.7.1)
+        //fade_in_speed: 'medium', // how fast notifications fade in (string or int)
+        //fade_out_speed: 2000, // how fast the notices fade out
+		//time: 10000 // hang on the screen for...
+	});
+	jQuery.get('<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
+/ajax/notif.php',function(data){
+	if(data){
+		jQuery.gritter.add({
+			title: data.title,
+			text: data.text,
+			image : data.image,
+			time: 5000,
+		});
+	}
+	},"json");
+}
+setInterval('get()', 5000);
+</script>
 <input type="hidden" value="<?php if (isset($_smarty_tpl->tpl_vars['token']->value)){?><?php echo $_smarty_tpl->tpl_vars['token']->value;?>
 <?php }?>" id="token"/><?php }} ?>

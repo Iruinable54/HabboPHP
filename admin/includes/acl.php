@@ -46,6 +46,7 @@ define('ACL_SITE_CONFIG','6;7;8');
 define('ACL_SITE_CONFIG_MAIL','6;7;8');
 define('ACL_SITE_SOCIAL','6;7;8');
 define('ACL_SITE_FB','6;7;8;6;7;8');
+define('ACL_SITE_NOTIF','6;7;8;6;7;8');
 
 //Users
 define('ACL_USERS_VIEW','6;7;8');
