@@ -1,4 +1,5 @@
 <?php
+require '../version.php';
 mysql_connect($_POST['dbhost'],$_POST['uname'],$_POST['pwd']) or die('Les informations de connexion vers la base de donnée sont incorrecte.');
 mysql_select_db($_POST['dbname']) or die('Les informations de connexion vers la base de donnée sont incorrecte.');
 $_POST['em'] = 'phoenix';
@@ -8,6 +9,7 @@ define('USER_DB','".$_POST['uname']."');
 define('PASSWORD_DB','".$_POST['pwd']."');
 define('NAME_DB','".$_POST['dbname']."');
 define('EMULATOR','".$_POST['em']."');
+define('VERSION','".VERSION."');
 ?>";
 
 $f = '../../includes/settings.inc.php';

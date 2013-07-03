@@ -253,7 +253,7 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
 
         <li id="registration-anchor">
 
-<div id="registration-form" class="hide-captcha">
+<div id="registration-form">
     <div id="registration-form-header">
         <h2>Nom utilisateur</h2>
         <p>Remplis ces informations pour commencer :</p>
@@ -261,51 +261,42 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
     <div id="registration-form-main">
         <form id="register-new-user" autocomplete="off">
         <input type="hidden" name="next" value="">
-        <div id="registration-form-main-left">
-            
-            <label for="registration-email">Login</label>
-            <input type="email" name="registrationBean.email" id="registration-email" value="">
-			 <label for="registration-email">Email</label>
-            <input type="email" name="registrationBean.email" id="registration-email" value="">
-			<label for="registration-email">Mission</label>
-            <input type="email" name="registrationBean.email" id="registration-email" value="">
-            
+      <div id="registration-form-main-left">
+     
+ <label for="registration-pseudo">Pseudo</label>
+            <label for="registration-pseudo" class="details">Ton pseudo peut contenir des lettres (majuscules et minuscule), des nombres et des tirets (-).</label>
+			            <input type="pseudo" name="pseudo" id="registration-pseudo" value="">
 
+            <label for="registration-password">Mot de passe</label>
+            <label for="registration-password" class="details">Ton mot de passe doit comprendre au moins <b>6 caractères</b> et inclure des <b>lettres et des chiffres</b></label>
+			            <input type="password" name="password" id="registration-password" maxlength="32" value="">
+			
+			<label for="registration-password">Re-tape ton Mot de Passe</label>
+            <input type="password" name="repassword" id="registration-password" maxlength="32" value="">
         </div>
+      
+      
+      
         <div id="registration-form-main-right">
 
-            <span id="password-field-container">
-                <label for="registration-password">Nouveau mot de passe</label>
-                <label for="registration-password" class="details">Ton mot de passe doit comprendre au moins <b>6 caractères</b> et inclure des <b>lettres et des chiffres</b></label>
-                <input type="password" name="registrationBean.password" id="registration-password" maxlength="32" value="">
-            </span>
+   <label for="registration-pseudo">Recopie</label>
 
-            <div id="captcha-container">
-
-                <label for="recaptcha_response_field">Captcha</label>
-                <label for="recaptcha_response_field" class="details">Ecrire en deux mots (séparés d'un espace):</label>
-
-                    <script src="https://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+ <form action="" id="captcha-formH" method="post">
+ <script type="text/javascript"
+     src="http://www.google.com/recaptcha/api/challenge?k={$public_key}">
+  </script>
+  <noscript>
+     <iframe src="http://www.google.com/recaptcha/api/noscript?k={$public_key}"
+         height="300" width="500" frameborder="0"></iframe><br>
+     <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+     </textarea>
+     <input type="hidden" name="recaptcha_response_field"
+         value="manual_challenge">
+  </noscript>
+  <input type="hidden" name="hidden" value="hidden"/>
+  <input type="hidden" id="avatarFigure" name="figure" value=""/>
+  </form>           
                     
-                    <div id="captcha-image-container">
-                        <div id="recaptcha_image"></div>
-                        <div id="captcha-overlay"></div>
-                    </div>
-                    <p id="captcha-new" class="details"><a class="recaptcha-reload" href="#">Essaye un nouveau code</a></p>
-                    <input type="text" name="recaptcha_response_field" id="recaptcha_response_field">
-
-            </div>
-            <p class="checkbox-container" id="registration-tos">
-                <input type="checkbox" id="tos" name="registrationBean.termsOfServiceSelection" value="true">
-                <label for="tos" class="details checkbox">
-                    J'accepte les <a href="http://help.habbo.fr/entries/22570571-les-conditions-d-utilisation" target="_blank" onclick="window.open('http://help.habbo.fr/entries/22570571-les-conditions-d-utilisation'); return false;">Conditions d'utilisation</a> et les <a href="https://help.habbo.fr/entries/22574122-politique-en-matiere-de-traitement-des-donnees-personnelles">Politique en matière de traitement des données personnelles</a>
-                </label>
-            </p>
-            <p class="checkbox-container">
-
-                <input type="checkbox" id="registration-marketing" value="true" name="registrationBean.marketing">
-                <label for="registration-marketing" class="details checkbox">Je souhaite être informé des nouveautés sur Habbo et recevoir la newsletter.</label>
-            </p>
             <div class="submit-button-wrapper">
                 <a href="#" class="button large not-so-large register-submit"><b></b><span>Valider</span></a>
             </div>

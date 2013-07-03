@@ -4635,26 +4635,7 @@ var ChangePassword = (function () {
         }
     }
 })();
-var RecaptchaUtil = (function () {
-    return {
-        showRecaptcha: function (b, c) {
-            var a = {
-                theme: "custom",
-                custom_theme_widget: b
-            };
-            Recaptcha.destroy();
-            this.generateRecaptcha();
-            Recaptcha.create(c, b, a)
-        },
-        reloadRecaptcha: function () {
-            this.generateRecaptcha();
-            Recaptcha.reload()
-        },
-        generateRecaptcha: function () {
-            $.post("/captcha/generate")
-        }
-    }
-})();
+
 var Registration = (function () {
     var k = false;
     var j;

@@ -1,215 +1,58 @@
-<?php $admin=true;   ?>
-<?php include "includes/header.php"; ?>
-<div class="row-fluid">
+<?php require 'includes/header.php'; ?>
+<header class="jumbotron subhead" id="overview">
+  <h1>HabboPHP</h1>
+  <p class="lead">Bienvenue dans ton administration <b><?php echo addslashes($user->username); ?></b></p>
+</header>
 
+<div class="row"> 
+	<div class="span12">
+		<?php
+		
+		if(!defined('VERSION')){
+			define('VERSION','Version iconnue');
+		}
+		
+		if(VersionIsLast())
+			echo'<div class="alert alert-success"><b>A jour</b> : Vous avez la dernière version de HabboPHP : <b>'.VERSION.'</b></div>';
+		else
+			echo'<div class="alert alert-error"><b>Attention</b> : Nouvelle version de HabboPHP disponible : <b><a href="https://github.com/habbophp/HabboPHP/archive/master.zip">'.file_get_contents('http://release.habbophp.com').'</a></b></div>';
+		?>
+		<div class="alert alert-info">Votre version HabboPHP : <b><?php echo VERSION ; ?></b></div>
+	</div>
+	<div class="span6">
+		<div class="well">
+			<h2>Informations sur votre serveur</h2>
+				<li><b>Informations sur votre serveur:</b> <?php echo $_SERVER['SERVER_SOFTWARE']; ?></li>
+				<li><b>Version de PHP:</b> <?php echo phpversion(); ?></li>
+				<li><b>Limite de mémoire:</b> <?php echo ini_get('memory_limit'); ?></li>
+				<li><b>Temps d'exécution maximal (max_execution_time): </b><?php echo ini_get('max_execution_time'); ?></b></li>
+				<li><b>Version de Mysql:</b> <?php echo mysql_get_server_info(); ?></li>
+	</div>
 </div>
-
-<div class="row-fluid">
-  <div class="span4">
-  <?php if(Tools::checkACL($user->rank,ACL_INDEX_STATS)) : ?>
-  <h2>Statistiques</h2>
-  <div class="btn-group">
-  	<a class="btn" data-toggle="modal" href="#visitors"><?php echo $lang['Visites']; ?></a>
-  	<a class="btn btn-primary" data-toggle="modal" href="#pages"><?php echo $lang['PagesViews']; ?></a>
-  	<a class="btn" data-toggle="modal" href="#connections"><?php echo $lang['Connections']; ?></a>
-  	<a class="btn btn-primary" data-toggle="modal" href="#registers"><?php echo $lang['Registers']; ?></a>
-  </div>
-  <br />
- <?php endif ; ?>
-  <h2><?php echo $lang['HelpHabboPHP']; ?></h2>
-  <iframe src="http://release.habbophp.com/dons/dons.php?lang=<?php echo $config->langadmin; ?>" width="100%" border="0" scrolling="no" style="border:0;height:280px;width:100%;"></iframe>
-  </div>
-  <div class="span8">
-    <?php if(Tools::checkACL($user->rank,ACL_INDEX_NOTES)) : ?>
+<div class="span6">
+		<div class="well">
+			<h2>Informations sur votre hotel</h2>
+				<li><b>Membres inscrits: </b> <?php echo mysql_num_rows(mysql_query('SELECT id FROM users')); ?></li>
+				<li><b>Membres en ligne: </b> <?php echo mysql_num_rows(mysql_query('SELECT id FROM users WHERE online="1"')); ?></li>
+				<li><b>Homme:</b> <?php echo mysql_num_rows(mysql_query('SELECT id FROM users WHERE gender="M"')); ?></li>
+				<li><b>Femme:</b> <?php echo mysql_num_rows(mysql_query('SELECT id FROM users WHERE gender="F"')); ?></li>
+	<li><b>Staff en ligne: </b><?php echo mysql_num_rows(mysql_query('SELECT id FROM users WHERE online="1" AND rank>5')); ?></li>
+	<li><b>Hotel</b>: En ligne</li>
+	</div>
+</div>
+<br style="clear:both"/>
+	<div class="span6">
+	<h2>Tweets</h2>
+	<a class="twitter-timeline" href="https://twitter.com/HabboPHPCom" data-widget-id="352558774193639424">Tweets de @HabboPHPCom</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</div>
+	<div class="span6">
+	<?php if(Tools::checkACL($user->rank,ACL_INDEX_NOTES)) : ?>
   <h2><?php echo $lang['Notes']; ?></h2>
-  	<textarea style="width:100%" id="notes" ><?php echo $config->notes ; ?></textarea><br/>
+  	<textarea style="width:100%;height:290px;" id="notes" ><?php echo $config->notes ; ?></textarea><br/>
   	<button type="button" onclick="setconfig($('.nicEdit-main').html(),'notes');" class="btn btn-primary"><?php echo $lang['Save']; ?></button>
   <?php endif ;?>
-  <br /><br />
- 
-  <h2><?php echo $lang['NewsFromHabboPHP']; ?></h2>
-  <ul class="nav nav-pills">
-  	<li class="active"><a href="#home" data-toggle="tab">Twitter HabboPHP</a></li>
-  		<li ><a href="http://habbophp.com/forum" target="_blank" >Forum <?php echo $lang['Help']; ?></a></li>
-  </ul>
-  
-	<div style="margin-left:20px;" class="tab-content">
-	  <div class="tab-pane active well" id="home"><div id="lasttweet"><?php echo $lang['Loading']; ?>…</div><div style="float:right;"><a href="" style="font-family:georgia;font-style:italic;"><?php echo $lang['FollowHabboPHPonTwitter']; ?></a></div><div style="clear:both;"></div></div>
 	</div>
-  </div>
-   </div>
-
-<style>
-.modal {
-position: fixed;
-top: 50%;
-left: 50%;
-z-index: 1050;
-max-height: 700px;
-overflow: auto;
-width: 800px;
-margin: -250px 0 0 -400px;
-background-color: white;
-border: 1px solid #999;
-border: 1px solid rgba(0, 0, 0, 0.3);
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
-border-radius: 6px;
--webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
--moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
--webkit-background-clip: padding-box;
--moz-background-clip: padding-box;
-background-clip: padding-box;
-}
-</style>
-
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    
-<div id="visitors" class="modal"  style="display:none;">
-<div class="modal-header" >
-    <a class="close" data-dismiss="modal">×</a>
-    <h3><?php echo $lang['Visites']; ?></h3>
-  </div>
-    <script type="text/javascript">
-      google.load("visualization", "1", {packages:["corechart"]});
-      google.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Jour', '<?php echo $lang['Visites']; ?>'],
-        <?php $query=mysql_query("SELECT * FROM habbophp_stats ORDER BY date  LIMIT 15"); 
-		while($row=mysql_fetch_array($query)) { ?>
-          
-          ['<?php $datetime = strtotime($row['date']); echo date("d/m/Y", $datetime); ?>',  <?php echo $row['visites']; ?>],
-        <?php }?>
-          
-        ]);
-
-        var options = {
- 		 	width:780,
- 		 	height:360
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
-    </script>
-    
-    <div id="chart_div" style="width:780px;height:360px"></div>
-   <div class="modal-footer">
-    <a href="#" data-dismiss="modal"   class="btn"><?php echo $lang['Close']; ?></a>
-  </div>
 </div>
 
-<div id="pages" class="modal" style="display:none;">
-<div class="modal-header">
-    <a class="close" data-dismiss="modal">×</a>
-    <h3><?php echo $lang['PagesViews']; ?></h3>
-  </div>    
-        <script type="text/javascript">
-      google.load("visualization", "1", {packages:["corechart"]});
-      google.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Jour', '<?php echo $lang['PagesViews']; ?>'],
-        <?php $query=mysql_query("SELECT * FROM habbophp_stats ORDER BY date  LIMIT 15"); 
-		while($row=mysql_fetch_array($query)) { ?>
-          
-          ['<?php $datetime = strtotime($row['date']); echo date("d/m/Y", $datetime); ?>',  <?php echo $row['pagesvues']; ?>],
-        <?php }?>
-          
-        ]);
-
-        var options = {
-          title: 'Pages vues',
-          width:780,
- 		 height:360
- 		  
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('chart_div2'));
-        chart.draw(data, options);
-      }
-    </script>
-    
-     <div id="chart_div2" style="width:780px;height:360px"></div>
-   <div class="modal-footer">
-    <a href="#" data-dismiss="modal" class="btn"><?php echo $lang['Close']; ?></a>
-  </div>
-</div>
-    
-<div id="registers" class="modal" style="display:none;">
-<div class="modal-header">
-    <a class="close" data-dismiss="modal">×</a>
-    <h3><?php echo $lang['Registers']; ?></h3>
-  </div>    
-    <script type="text/javascript">
-      google.load("visualization", "1", {packages:["corechart"]});
-      google.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Jour', '<?php echo $lang['Registers']; ?>'],
-        <?php $query=mysql_query("SELECT * FROM habbophp_stats ORDER BY date  LIMIT 15"); 
-		while($row=mysql_fetch_array($query)) { ?>
-          
-          ['<?php $datetime = strtotime($row['date']); echo date("d/m/Y", $datetime); ?>',  <?php echo $row['inscrits']; ?>],
-        <?php }?>
-          
-        ]);
-
-        var options = {
-          title: 'Inscriptions',
- 			width:780,
- 		 	height:360
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('chart_div3'));
-        chart.draw(data, options);
-      }
-    </script>
-    
-    <div id="chart_div3" style="width:780px;height:360px"></div>
-       <div class="modal-footer">
-    <a href="#" data-dismiss="modal" class="btn"><?php echo $lang['Close']; ?></a>
-  </div>
-</div>
-
-<div id="connections" class="modal" style="display:none;">
-<div class="modal-header">
-    <a class="close" data-dismiss="modal">×</a>
-    <h3><?php echo $lang['Connections']; ?></h3>
-  </div>    
-    <script type="text/javascript">
-      google.load("visualization", "1", {packages:["corechart"]});
-      google.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Jour', '<?php echo $lang['Connections']; ?>'],
-        <?php $query=mysql_query("SELECT * FROM habbophp_stats ORDER BY date  LIMIT 15"); 
-		while($row=mysql_fetch_array($query)) { ?>
-          
-          ['<?php $datetime = strtotime($row['date']); echo date("d/m/Y", $datetime); ?>',  <?php echo $row['connexions']; ?>],
-        <?php }?>
-          
-        ]);
-
-        var options = {
-          title: 'Connexion',
- 		  width:780,
- 		 	height:360,
- 		  'highlightDot' : 'last',
- 		  'scaleColumns' : 'allfixed'
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('chart_div4'));
-        chart.draw(data, options);
-      }
-    </script>
-    
-     <div id="chart_div4" style="width:780px;height:360px"></div>
-       <div class="modal-footer">
-    <a href="#" data-dismiss="modal" class="btn"><?php echo $lang['Close']; ?></a>
-  </div>
-</div>
-
-<?php include "includes/footer.php"; ?>
+<?php require 'includes/footer.php'; ?>

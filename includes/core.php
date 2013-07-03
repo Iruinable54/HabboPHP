@@ -107,6 +107,7 @@ require	$path.'class/rooms.class.php' ;
 
 require	$path.'class/groups.class.php' ;
 
+
 /*+===================================+
 |   Connexion to database             |
 +===================================+*/
@@ -166,7 +167,10 @@ $tpl->assignByRef('user', $user);
 $tpl->configLoad($path.'modules/lang/'.$config->lang.'.lang');
 define('SMARTY_DEBUG_CONSOLE', false); 
 
-
+	$k_public = '6LenR88SAAAAAMcaw4UWGvAUyDD_HIj97eUBsNhf';
+	$privatekey = '6LenR88SAAAAAGhwPRprdBpxYR1D591QjX-TVgB9';
+	$tpl->assign('captcha',recaptcha_get_html($k_public));
+	$tpl->assign('public_key',$k_public);
 
 /*+===================================+
 |    Gestion des erreurs              |

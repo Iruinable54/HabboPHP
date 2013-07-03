@@ -21,6 +21,6 @@
 	ini_set('log_errors', 1); 
 	error_reporting(E_ALL);
 	if(!$Auth->isConnected()) redirection($config->url_site.'/logout.php');
-	if($user->rank<6) redirection($config->url_site.'/logout.php');	
+	if(!Tools::checkACL($user->rank,ACL_GLOBAL_ADMIN)) redirection($config->url_site.'/logout.php');	
 	
 ?>

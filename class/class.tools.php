@@ -67,6 +67,26 @@ class Tools{
 		return $_SESSION['token'];
 	}
 	
+	public static function apacheModExists($name)
+	{
+		if (function_exists('apache_get_modules'))
+		{
+			static $apache_module_list = null;
+
+			if (!is_array($apache_module_list))
+				$apache_module_list = apache_get_modules();
+
+			// we need strpos (example, evasive can be evasive20)
+			foreach ($apache_module_list as $module)
+			{
+				if (strpos($module, $name) !== false)
+					return true;
+			}
+		}
+		return false;
+	}
+
+	
 	
 }
 
