@@ -18,7 +18,7 @@ $margin=0;
 $height=100;
 if($rowcata['height']<100) { $margin=100-$rowcata['height']; $margin=$margin/2; $height=100-$margin;}
 ?>
-	<div onclick="addnewwidget('<?php echo $rowcata['class']; ?>','image');" id="astickerc<?php echo $rowcata['id']; ?>" style="cursor:pointer;opacity:0;padding:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;border:1px solid #ccc;border-bottom:2px solid #ccc;height:<?php echo ceil($height); ?>px;float:left;padding-top:<?php echo floor($margin); ?>px;margin-left:10px;margin-bottom:10px;"><img src="<?php echo $config->url_site; ?>/web-gallery/homepage/stickers/<?php echo $rowcata['image']; ?>" style="width:40px;max-height:100px;" /></div>
+	<div onclick="addnewwidget('<?php echo $rowcata['class']; ?>','image');" id="astickerc<?php echo $rowcata['id']; ?>" style="cursor:pointer;opacity:0;padding:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;border:1px solid #ccc;border-bottom:2px solid #ccc;height:<?php echo ceil($height); ?>px;float:left;padding-top:<?php echo floor($margin); ?>px;margin-left:10px;margin-bottom:10px;"><img src="http://habbr.info/CDN/homepage/stickers/<?php echo $rowcata['image']; ?>" style="width:40px;max-height:100px;" /></div>
 	<script>
 	setTimeout("$('#astickerc<?php echo $rowcata['id']; ?>').animate({ opacity: 1 });",<?php echo $time; ?>);
 	</script>
