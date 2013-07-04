@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2013-07-02 19:46:31
+<?php /* Smarty version Smarty-3.1.8, created on 2013-07-04 17:49:52
          compiled from "/Applications/MAMP/htdocs/HabboPHP/themes/templates/community.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:60661775951d311f772e5b4-83777698%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:159906230551d599a0a73576-66240704%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '60661775951d311f772e5b4-83777698',
+  'nocache_hash' => '159906230551d599a0a73576-66240704',
   'function' => 
   array (
   ),
@@ -23,9 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_51d311f7909321_81110654',
+  'unifunc' => 'content_51d599a0c3bb33_33632964',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51d311f7909321_81110654')) {function content_51d311f7909321_81110654($_smarty_tpl) {?><div id="container">
+<?php if ($_valid && !is_callable('content_51d599a0c3bb33_33632964')) {function content_51d599a0c3bb33_33632964($_smarty_tpl) {?><div id="container">
 	<div id="content" style="position: relative;" class="clearfix">
 <?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['customer'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['customer']);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['customer']['name'] = 'customer';

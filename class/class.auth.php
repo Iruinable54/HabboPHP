@@ -136,7 +136,7 @@ class Auth{
 	
 
 	
-	private function getSaltUsers($id){
+	public function getSaltUsers($id){
 		$data = $this->_db->query('SELECT * FROM habbophp_users_security WHERE uid="'.safe($id,'SQL').'"',true,false);
 		return $data['salt'];
 		

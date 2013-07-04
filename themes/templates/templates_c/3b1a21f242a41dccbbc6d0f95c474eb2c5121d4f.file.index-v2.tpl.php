@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2013-07-03 20:54:22
+<?php /* Smarty version Smarty-3.1.8, created on 2013-07-04 17:50:38
          compiled from "/Applications/MAMP/htdocs/HabboPHP/themes/templates/index-v2.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:174351876051d4735e5f05f9-26254642%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:149541093951d599ce1442e6-53099425%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '3b1a21f242a41dccbbc6d0f95c474eb2c5121d4f' => 
     array (
       0 => '/Applications/MAMP/htdocs/HabboPHP/themes/templates/index-v2.tpl',
-      1 => 1372871849,
+      1 => 1372952932,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '174351876051d4735e5f05f9-26254642',
+  'nocache_hash' => '149541093951d599ce1442e6-53099425',
   'function' => 
   array (
   ),
@@ -29,9 +29,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_51d4735e77bd28_85118691',
+  'unifunc' => 'content_51d599ce264a57_62229046',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51d4735e77bd28_85118691')) {function content_51d4735e77bd28_85118691($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_51d599ce264a57_62229046')) {function content_51d599ce264a57_62229046($_smarty_tpl) {?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -56,10 +56,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 /web-gallery/styles/v3_landing.css" type="text/css" />
 <script src="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
 /web-gallery/js/v3_landing_top.js" type="text/javascript"></script>
-
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
-/web-gallery/js/password.js" type="text/javascript"></script>
+/web-gallery/js/index.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
 
 
         <meta name="description" content="<?php echo $_smarty_tpl->tpl_vars['config']->value->meta_description;?>
@@ -68,7 +70,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 " />
 
 
-    <meta name="build" content="63-BUILD2051 - 02.04.2013 23:19 - fr" />
     
 </head>
 <body>
@@ -147,6 +148,7 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
 	<?php }?>
 	
 <div id="login-form-container">
+
     <a href="#home" id="habbo-logo"></a>
 
     <form action="" method="post">
@@ -170,6 +172,7 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
         <div id="login-column-3">
             <input type="submit" value="Login" style="margin: -10000px; position: absolute;">
             <a href="#" tabindex="4" class="button" id="credentials-submit"><b></b><span>Entrer</span></a>
+            
         </div>
 
         <div id="login-column-4">
@@ -311,20 +314,23 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
         <p>Remplis ces informations pour commencer :</p>
     </div>
     <div id="registration-form-main">
-        <form id="register-new-user" autocomplete="off">
+        <form id="register-new-use" autocomplete="off">
         <input type="hidden" name="next" value="">
       <div id="registration-form-main-left">
      
  <label for="registration-pseudo">Pseudo</label>
             <label for="registration-pseudo" class="details">Ton pseudo peut contenir des lettres (majuscules et minuscule), des nombres et des tirets (-).</label>
-			            <input type="pseudo" name="pseudo" id="registration-pseudo" value="">
+            <div class="field-error" id="error-pseudo" style="display:none">Please supply a valid birthdate</div>
+			            <input type="pseudo"  name="pseudo" id="registration-pseudo" value="">
 
             <label for="registration-password">Mot de passe</label>
             <label for="registration-password" class="details">Ton mot de passe doit comprendre au moins <b>6 caractères</b> et inclure des <b>lettres et des chiffres</b></label>
+          <div class="field-error" id="error-pwd" style="display:none">Please supply a valid birthdate</div>
 			            <input type="password" name="password" id="registration-password" maxlength="32" value="">
 			
-			<label for="registration-password">Re-tape ton Mot de Passe</label>
-            <input type="password" name="repassword" id="registration-password" maxlength="32" value="">
+			<label for="registration-password">Email</label>
+			<div class="field-error" id="error-email" style="display:none"></div>
+            <input type="text" name="email" id="registration-email" maxlength="32" value="">
         </div>
       
       
@@ -332,7 +338,7 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
         <div id="registration-form-main-right">
 
    <label for="registration-pseudo">Recopie</label>
-
+<div class="field-error" id="error-c" style="display:none"></div>
  <form action="" id="captcha-formH" method="post">
  <script type="text/javascript"
      src="http://www.google.com/recaptcha/api/challenge?k=<?php echo $_smarty_tpl->tpl_vars['public_key']->value;?>
@@ -342,7 +348,7 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
      <iframe src="http://www.google.com/recaptcha/api/noscript?k=<?php echo $_smarty_tpl->tpl_vars['public_key']->value;?>
 "
          height="300" width="500" frameborder="0"></iframe><br>
-     <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+     <textarea name="recaptcha_challenge_field" id="rec" rows="3" cols="40">
      </textarea>
      <input type="hidden" name="recaptcha_response_field"
          value="manual_challenge">
@@ -352,21 +358,16 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
   </form>           
                     
             <div class="submit-button-wrapper">
-                <a href="#" class="button large not-so-large register-submit"><b></b><span>Valider</span></a>
+                                <input type="submit" value="Valider" class="button large not-so-large register-submit" name="send"/>
             </div>
         </div>
 
-        <div id="parent-email-container" style="display: none;">
-            <label for="parent-email">Email des parents</label>
-            <label for="parent-email" class="details">Comme tu as moins de 13 ans, nous devons contacter tes parent(s) pour les informer que tu joues à Habbo.</label>
-            <input type="email" id="parent-email" name="registrationBean.parentEmail" value="">
-            <div class="submit-button-wrapper">
-                <a href="#" class="button large not-so-large register-submit"><b></b><span>Valider</span></a>
-            </div>
-        </div>
+        
         </form>
     </div>
 </div>
+
+
 <div id="magnifying-glass"></div>
             <div id="sail"></div>
         </li>
@@ -383,30 +384,12 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
     </div>
     <div id="sulake-logo"><a href="http://www.sulake.com"></a></div>
 </footer>
-
-
 <script src="<?php echo $_smarty_tpl->tpl_vars['config']->value->url_site;?>
 /web-gallery/js/v3_landing_bottom.js" type="text/javascript"></script>
 <!--[if IE]><script src="https://images-eussl.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1650/web-gallery/static/js/v3_ie_fixes.js" type="text/javascript"></script>
 <![endif]-->
 
 
-
-<script type="text/javascript">
-    var rpxJsHost = (("https:" == document.location.protocol) ? "https://" : "http://static.");
-    document.write(unescape("%3Cscript src='" + rpxJsHost +
-            "rpxnow.com/js/lib/rpx.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-    RPXNOW.overlay = false;
-    RPXNOW.language_preference = 'fr'; 
-    RPXNOW.flags = 'show_provider_list';
-</script>
-
-
-    
-
-    
 
 
 </body>

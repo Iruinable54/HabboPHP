@@ -20,16 +20,17 @@
 
 <link rel="stylesheet" href="{$config->url_site}/web-gallery/styles/v3_landing.css" type="text/css" />
 <script src="{$config->url_site}/web-gallery/js/v3_landing_top.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="{$config->url_site}/web-gallery/js/index.js" type="text/javascript"></script>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="{$config->url_site}/web-gallery/js/password.js" type="text/javascript"></script>
+
 
 
         <meta name="description" content="{$config->meta_description}" />
         <meta name="keywords" content="{$config->meta_keywords}" />
 
 
-    <meta name="build" content="63-BUILD2051 - 02.04.2013 23:19 - fr" />
     
 </head>
 <body>
@@ -102,6 +103,7 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
 	{/if}
 	
 <div id="login-form-container">
+
     <a href="#home" id="habbo-logo"></a>
 
     <form action="" method="post">
@@ -125,6 +127,7 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
         <div id="login-column-3">
             <input type="submit" value="Login" style="margin: -10000px; position: absolute;">
             <a href="#" tabindex="4" class="button" id="credentials-submit"><b></b><span>Entrer</span></a>
+            
         </div>
 
         <div id="login-column-4">
@@ -259,20 +262,23 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
         <p>Remplis ces informations pour commencer :</p>
     </div>
     <div id="registration-form-main">
-        <form id="register-new-user" autocomplete="off">
+        <form id="register-new-use" autocomplete="off">
         <input type="hidden" name="next" value="">
       <div id="registration-form-main-left">
      
  <label for="registration-pseudo">Pseudo</label>
             <label for="registration-pseudo" class="details">Ton pseudo peut contenir des lettres (majuscules et minuscule), des nombres et des tirets (-).</label>
-			            <input type="pseudo" name="pseudo" id="registration-pseudo" value="">
+            <div class="field-error" id="error-pseudo" style="display:none">Please supply a valid birthdate</div>
+			            <input type="pseudo"  name="pseudo" id="registration-pseudo" value="">
 
             <label for="registration-password">Mot de passe</label>
             <label for="registration-password" class="details">Ton mot de passe doit comprendre au moins <b>6 caractères</b> et inclure des <b>lettres et des chiffres</b></label>
+          <div class="field-error" id="error-pwd" style="display:none">Please supply a valid birthdate</div>
 			            <input type="password" name="password" id="registration-password" maxlength="32" value="">
 			
-			<label for="registration-password">Re-tape ton Mot de Passe</label>
-            <input type="password" name="repassword" id="registration-password" maxlength="32" value="">
+			<label for="registration-password">Email</label>
+			<div class="field-error" id="error-email" style="display:none"></div>
+            <input type="text" name="email" id="registration-email" maxlength="32" value="">
         </div>
       
       
@@ -280,7 +286,7 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
         <div id="registration-form-main-right">
 
    <label for="registration-pseudo">Recopie</label>
-
+<div class="field-error" id="error-c" style="display:none"></div>
  <form action="" id="captcha-formH" method="post">
  <script type="text/javascript"
      src="http://www.google.com/recaptcha/api/challenge?k={$public_key}">
@@ -288,7 +294,7 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
   <noscript>
      <iframe src="http://www.google.com/recaptcha/api/noscript?k={$public_key}"
          height="300" width="500" frameborder="0"></iframe><br>
-     <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+     <textarea name="recaptcha_challenge_field" id="rec" rows="3" cols="40">
      </textarea>
      <input type="hidden" name="recaptcha_response_field"
          value="manual_challenge">
@@ -298,21 +304,16 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
   </form>           
                     
             <div class="submit-button-wrapper">
-                <a href="#" class="button large not-so-large register-submit"><b></b><span>Valider</span></a>
+                                <input type="submit" value="Valider" class="button large not-so-large register-submit" name="send"/>
             </div>
         </div>
 
-        <div id="parent-email-container" style="display: none;">
-            <label for="parent-email">Email des parents</label>
-            <label for="parent-email" class="details">Comme tu as moins de 13 ans, nous devons contacter tes parent(s) pour les informer que tu joues à Habbo.</label>
-            <input type="email" id="parent-email" name="registrationBean.parentEmail" value="">
-            <div class="submit-button-wrapper">
-                <a href="#" class="button large not-so-large register-submit"><b></b><span>Valider</span></a>
-            </div>
-        </div>
+        
         </form>
     </div>
 </div>
+
+
 <div id="magnifying-glass"></div>
             <div id="sail"></div>
         </li>
@@ -329,29 +330,11 @@ Si tu ne le trouves pas, jette un œil à ta boîte spam!</span>
     </div>
     <div id="sulake-logo"><a href="http://www.sulake.com"></a></div>
 </footer>
-
-
 <script src="{$config->url_site}/web-gallery/js/v3_landing_bottom.js" type="text/javascript"></script>
 <!--[if IE]><script src="https://images-eussl.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/1650/web-gallery/static/js/v3_ie_fixes.js" type="text/javascript"></script>
 <![endif]-->
 
 
-
-<script type="text/javascript">
-    var rpxJsHost = (("https:" == document.location.protocol) ? "https://" : "http://static.");
-    document.write(unescape("%3Cscript src='" + rpxJsHost +
-            "rpxnow.com/js/lib/rpx.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-    RPXNOW.overlay = false;
-    RPXNOW.language_preference = 'fr'; 
-    RPXNOW.flags = 'show_provider_list';
-</script>
-
-
-    
-
-    
 
 
 </body>
