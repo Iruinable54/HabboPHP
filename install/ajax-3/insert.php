@@ -21,7 +21,7 @@ $requetes = '';
 $sql = file('../db.sql');
 foreach($sql as $lecture){if(substr(trim($lecture), 0, 2) != '--'){$requetes .= $lecture;}}
  
-$reqs = split(';', $requetes); 
+$reqs = explode(';', $requetes); 
 foreach($reqs as $req){if(!mysql_query($req) AND trim($req) != ''){}}
 
 echo 'true';
