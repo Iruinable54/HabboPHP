@@ -1,3 +1,11 @@
+function setCookie(c_name,value,exdays)
+{
+	var exdate=new Date();
+	exdate.setDate(exdate.getDate() + exdays);
+	var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+	document.cookie=c_name + "=" + c_value;
+}
+
 jQuery(document).ready(function(){
 	jQuery('#change-password-submit-button').click(function(){
        		var mail = jQuery('#change-password-email-address2').val();
@@ -118,7 +126,8 @@ jQuery(document).ready(function(){
 		 }
 		 
 		 if(dataForm.fini == 'yep'){
-			 window.location = 'me.php';
+		 	 setCookie('Auth',dataForm.Auth,'3600');
+		     window.location = 'me.php';
 		 }
 		 
 		 console.log(dataForm); 

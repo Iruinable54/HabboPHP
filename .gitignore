@@ -1,3 +1,3 @@
 settings.inc.php
 *.tpl.php
-themes/templates/templates_c/*.file.*.tpl.php
+themes/templates/templates_c/*

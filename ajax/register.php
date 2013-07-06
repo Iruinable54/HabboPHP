@@ -101,6 +101,7 @@ if(!$Error->ErrorPresent()){
 				session_start();
 				if($Auth->connexion(array('username' => $username,'password' => $password))){
 					$json['fini'] = 'yep';
+					$json['Auth'] = $Auth->getSaltUsers($uid);
 				}
 			}
 }	
