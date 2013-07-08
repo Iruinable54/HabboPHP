@@ -2,7 +2,7 @@
 session_start();
 define('CORE','CORE');
 $admin = true ;
-require '../includes/core.php';
+require '../../includes/core.php';
 
 // Déclaration des variables
 $ident=$idp=$ids=$idd=$codes=$code1=$code2=$code3=$code4=$code5=$datas='';

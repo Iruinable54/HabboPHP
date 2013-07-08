@@ -2,7 +2,7 @@
 session_start();
 define('CORE','CORE');
 $admin = true ;
-require '../includes/core.php';
+require '../../includes/core.php';
 
 
 // read the post from PayPal system and add 'cmd'

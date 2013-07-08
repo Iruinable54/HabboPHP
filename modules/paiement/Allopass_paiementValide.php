@@ -2,7 +2,7 @@
 session_start();
 define('CORE','CORE');
 $admin = true ;
-require'../includes/core.php';
+require'../../includes/core.php';
 
 
   $RECALL = $_GET["RECALL"];
