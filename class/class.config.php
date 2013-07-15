@@ -17,14 +17,8 @@ class Config{
 	}
 	
 	public function editConfig($name,$value){
-		if($this->configExist($name)){
-			if($this->_db->query("UPDATE habbophp_config SET value='".safe($value,'SQL')."' WHERE name='".safe($name,'SQL')."'"))
-				return true;
-			
-		}else{
-			$this->_db->save(array('name' => safe($name) , 'value' => safe($value)));
-		}
-		return false;
+		$this->_db->query("UPDATE habbophp_config SET value='".safe($value,'SQL')."' WHERE name='".safe($name,'SQL')."'");
+
 	}
 	
 	/**

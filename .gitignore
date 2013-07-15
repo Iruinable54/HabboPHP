@@ -2,3 +2,5 @@ settings.inc.php
 themes/templates/templates_c/*.tpl.php
 themes/templates/templates_c/*.file.*.tpl.php
 themes/templates/templates_c/*
+
+themes/templates/templates_c/06b8d083cc1095a1acb9a069be16f4d9c6c45f77.file.profile-password.tpl.php

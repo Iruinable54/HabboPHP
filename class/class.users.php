@@ -21,7 +21,8 @@ class Users{
 											account_created,
 											vip,
 											hide_inroom,
-											hide_online,look',
+											hide_online,look,
+										    block_newfriends',
 											
 							'butterfly' =>	'id,
 											password,
