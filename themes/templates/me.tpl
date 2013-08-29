@@ -51,10 +51,13 @@
 <div class="enter-hotel-btn">
     <div class="open enter-btn">
   
-    		{if $news[customer].button_link_me eq 'hotel'}
+    	{if $news[customer].button_link_me eq 'hotel'}
 			    <a href="{$config->url_site}/client.php" target="38bad4312a9f27ce591f69f49725def36283fe99" onclick="HabboClient.openOrFocus(this); return false;">{#Enterhotel#}<i></i></a>
+			    {elseif  empty($news[customer].button_link_me)}
+			    	<a href="events.php?id={$news[customer].id}">{$news[customer].button_text_me}<i></i></a>
 			    {else}
-			    <a href="events.php?id={$news[customer].id}">{$news[customer].button_text_me}<i></i></a>
+			     
+			     <a href="{$news[customer].button_link_me}">{$news[customer].button_text_me}<i></i></a>
     		{/if}
        
         <b></b>
@@ -77,8 +80,11 @@
   
     		{if $news[customer].button_link_me eq 'hotel'}
 			    <a href="{$config->url_site}/client.php" target="38bad4312a9f27ce591f69f49725def36283fe99" onclick="HabboClient.openOrFocus(this); return false;">{#Enterhotel#}<i></i></a>
+			    {elseif  empty($news[customer].button_link_me)}
+			    	<a href="events.php?id={$news[customer].id}">{$news[customer].button_text_me}<i></i></a>
 			    {else}
-			    <a href="events.php?id={$news[customer].id}">{$news[customer].button_text_me}<i></i></a>
+			     
+			     <a href="{$news[customer].button_link_me}">{$news[customer].button_text_me}<i></i></a>
     		{/if}
        
         <b></b>
