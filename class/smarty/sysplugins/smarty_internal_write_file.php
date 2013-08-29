@@ -41,7 +41,7 @@ class Smarty_Internal_Write_File {
         $_tmp_file = $_dirpath . DS . uniqid('wrt', true);
         if (!file_put_contents($_tmp_file, $_contents)) {
             error_reporting($_error_reporting);
-            throw new SmartyException("unable to write file {$_tmp_file}");
+            throw new SmartyException("======> Il faut chmoder le dossier themes/templates/templates_c/ <====== {$_tmp_file}");
             return false;
         }
 

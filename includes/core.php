@@ -122,8 +122,11 @@ mysql_query("SET NAMES UTF8");
 +===================================+*/
 
 
+try{
+	$tpl = new Smarty(); //Template
+} catch (SmartyException $e) {
 
-$tpl = new Smarty(); //Template
+}
 $config = new config() ; //Configuration
 $Auth = new Auth(); //Authentification
 $db = new Db();
@@ -152,9 +155,15 @@ $tpl->debugging = false;
 $tpl->debugging_ctrl = 'NONE'; // 'NONE' on production
 $tpl->caching = false;
 
-$tpl->template_dir = 	$path.'themes/templates/';
-$tpl->compile_dir = 	$path.'themes/templates/templates_c/';
-$tpl->config_dir = 		$path.'modules/lang/';
+
+try{
+	$tpl->template_dir = 	$path.'themes/templates/';
+	$tpl->compile_dir = 	$path.'themes/templates/templates_c/';
+	$tpl->config_dir = 		$path.'modules/lang/';
+
+} catch (SmartyException $e) {
+
+}
 
 //Variable du template
 $arrStr = explode("/", $_SERVER['SCRIPT_NAME'] ); 

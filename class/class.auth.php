@@ -167,22 +167,20 @@ class Auth{
 	}
 	
 	public function isConnected(){
-		if(isset($_SESSION['Auth']) && $_SESSION['Auth'] == true && isset($_COOKIE['Auth']) && $_SESSION['Timeout'])
+		if(isset($_SESSION['Auth']) && $_SESSION['Auth'] == true)
 		{
-			$sql = mysql_query('SELECT id FROM users WHERE id='.safe($this->uid,'SQL'));
-			if(mysql_num_rows($sql) == 1)
-			{
-				if($_COOKIE['Auth'] == $this->getSaltUsers($this->uid))
-				{
-					$this->setLast_online($this->uid);
-					$this->setIP_last($this->uid);
-					return true ;
-				}
-			}
+			return true ;
 		}
 		return false ;
 							
 	}	
+	
+	public function initSALT($salt){
+		if(strlen($salt) == 40)
+			setcookie('Auth', $salt, time() + 12*3600);
+			//return true;
+	}
+	
 	public function logout(){
 		global $_SESSION ;
 		$_SESSION = array();

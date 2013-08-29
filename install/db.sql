@@ -3180,7 +3180,7 @@ CREATE TABLE IF NOT EXISTS `habbophp_logs` (
 -- Structure de la table `habbophp_news`
 --
 
-CREATE TABLE IF NOT EXISTS `habbophp_news` (
+CREATE TABLE `habbophp_news` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(150) NOT NULL,
   `short` text NOT NULL,
@@ -3188,8 +3188,11 @@ CREATE TABLE IF NOT EXISTS `habbophp_news` (
   `image` text NOT NULL,
   `date` varchar(50) NOT NULL,
   `comment` enum('0','1') NOT NULL,
+  `button_text_me` varchar(30) NOT NULL,
+  `button_link_display` enum('0','1') NOT NULL,
+  `button_link_me` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=83 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 --
 -- Contenu de la table `habbophp_news`

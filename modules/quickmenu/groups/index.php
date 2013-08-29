@@ -13,4 +13,4 @@
 </ul>
 <?php $i++; }} ?>
 
-<p class="create-group"><a onclick="GroupPurchase.open(); return false;" href="#">Créer un groupe</a></p>
+<p class="create-group"><a href="<?php echo $config->url_site; ?>/groups_add.php">Créer un groupe</a></p>

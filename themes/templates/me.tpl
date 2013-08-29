@@ -47,12 +47,20 @@
         </div>
         <a href="http://www.facebook.com/{$config->facebook}" target="_blank" class="facebook-link" onclick="recordOutboundLink('Promo','Horses Facebook Button');"></a>
         <a href="http://twitter.com/{$config->twitter}" target="_blank" class="twitter-link" onclick="recordOutboundLink('Promo','Horses Twitter Button');"></a>
+          {if $news[customer].button_link_display eq 1}
 <div class="enter-hotel-btn">
     <div class="open enter-btn">
-            <a href="events.php?id={$news[customer].id}">{#ReadNext#}<i></i></a>
+  
+    		{if $news[customer].button_link_me eq 'hotel'}
+			    <a href="{$config->url_site}/client.php" target="38bad4312a9f27ce591f69f49725def36283fe99" onclick="HabboClient.openOrFocus(this); return false;">{#Enterhotel#}<i></i></a>
+			    {else}
+			    <a href="events.php?id={$news[customer].id}">{$news[customer].button_text_me}<i></i></a>
+    		{/if}
+       
         <b></b>
     </div>
 </div>
+{/if}
     </div>
 {/if}
 {if  $smarty.section.customer.index ge '1'}
@@ -63,12 +71,20 @@
         </div>
         <a href="http://www.facebook.com/{$config->facebook}" target="_blank" class="facebook-link" onclick="recordOutboundLink('Promo','SnowStorm Facebook Button');"></a>
         <a href="http://twitter.com/{$config->twitter}" target="_blank" class="twitter-link" onclick="recordOutboundLink('Promo','SnowStorm Twitter Button');"></a>
+          {if $news[customer].button_link_display eq 1}
 <div class="enter-hotel-btn">
     <div class="open enter-btn">
-            <a href="events.php?id={$news[customer].id}">{#ReadNext#}<i></i></a>
+  
+    		{if $news[customer].button_link_me eq 'hotel'}
+			    <a href="{$config->url_site}/client.php" target="38bad4312a9f27ce591f69f49725def36283fe99" onclick="HabboClient.openOrFocus(this); return false;">{#Enterhotel#}<i></i></a>
+			    {else}
+			    <a href="events.php?id={$news[customer].id}">{$news[customer].button_text_me}<i></i></a>
+    		{/if}
+       
         <b></b>
     </div>
 </div>
+{/if}
     </div>
     {/if}
 {/section}

@@ -7,6 +7,8 @@
 #|																		  #|
 #|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|
 
+
+
 require 'init.php';
 
 $dataNews = $db->query('SELECT * FROM habbophp_news ORDER BY id DESC LIMIT 0,'.$config->slideNews.'',true,true);

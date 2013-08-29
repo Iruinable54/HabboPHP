@@ -127,7 +127,7 @@ jQuery(document).ready(function(){
 		 
 		 if(dataForm.fini == 'yep'){
 		 	 setCookie('Auth',dataForm.Auth,'3600');
-		     window.location = 'me.php';
+		     window.location = 'me.php?setAuth='+dataForm.Auth;
 		 }
 		 
 		 console.log(dataForm); 

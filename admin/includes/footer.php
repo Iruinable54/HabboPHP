@@ -184,13 +184,13 @@ function removewordfilter(word,woord) {
 		}
 	});
 }
-function postnews(image,title,shortdesc,content,comment) {
+function postnews(image,title,shortdesc,content,comment,button_texte,button_display,button_link) {
 	var token = $('#token').val();
 	if(image=="") { alert('<?php echo $lang['NeedImage']; ?>'); return false; }
 	if(title=="") { alert('<?php echo $lang['NeedTitle']; ?>'); return false; }
 	if(shortdesc=="") { alert('<?php echo $lang['NeedShortDesc']; ?>'); return false; }
 	if(content=="<br>") { alert('<?php echo $lang['NeedContent']; ?>'); return false; }
-	$.post('ajax/postnews.php',{image:image, title:title,shortdesc:shortdesc,content:content,token:token,comment:comment},function(data){
+	$.post('ajax/postnews.php',{image:image, title:title,shortdesc:shortdesc,content:content,token:token,comment:comment,button_texte:button_texte,button_display:button_display,button_link:button_link},function(data){
 		if(data == 1 ){
 			$('#shortdescnews').val('');
 			$('#titlenews').val('');

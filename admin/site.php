@@ -92,6 +92,33 @@ include "includes/header.php";
           </div>
           
           <div class="control-group">
+            <label class="control-label" for="input01">Texte du bouton</label>
+            <div class="controls">
+              <input type="text" class="input-xlarge" value="Lire la suite" id="boutton_texte">
+               <p class="help-block">Donne un texte au bouton vert qui se situe sur le slider de la page me.php</p>
+            </div>
+          </div>
+          
+           <div class="control-group">
+            <label class="control-label" for="input01">Afficher le bouton</label>
+            <div class="controls">
+			<select id="button_display">
+        	<option value="1">Oui</option>
+        	<option value="0">Non</option>
+			</select>
+              <p class="help-block">Afficher oui ou non le bouton vert de la news ?</p>
+            </div>
+          </div>
+          
+           <div class="control-group">
+            <label class="control-label" for="input01">Lien du bouton</label>
+            <div class="controls">
+              <input type="text" class="input-xlarge" id="button_link">
+               <p class="help-block">Ecris : "hotel" pour ouvrir l'hotel avec ce boutton. Pour ne pas changer le lien, laisse vide.</p>
+            </div>
+          </div>
+          
+          <div class="control-group">
             <label class="control-label" for="input01"><?php echo $lang['ShortDesc']; ?></label>
             <div class="controls">
               <input type="text" style="width:600px;" class="input-xlarge" id="shortdescnews">
@@ -118,7 +145,7 @@ include "includes/header.php";
           </div>
           
           <div class="form-actions">
-            <button type="button" onclick="postnews($('#linkimagenews').val(),$('#titlenews').val(),$('#shortdescnews').val(),$('.nicEdit-main').html(),$('#comments').val());" class="btn btn-primary"><?php echo $lang['SendMyNews']; ?></button>
+            <button type="button" onclick="postnews($('#linkimagenews').val(),$('#titlenews').val(),$('#shortdescnews').val(),$('.nicEdit-main').html(),$('#comments').val(),$('#boutton_texte').val(),$('#button_display').val(),$('#button_link').val())" class="btn btn-primary"><?php echo $lang['SendMyNews']; ?></button>
           </div>
         </fieldset>
       </div>
