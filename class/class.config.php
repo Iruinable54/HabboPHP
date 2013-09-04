@@ -10,7 +10,7 @@ class Config{
 	
 		$getConfig = $this->_db->query('SELECT * FROM  habbophp_config',true);
 		foreach($getConfig as  $data){
-			$this->$data['name'] = $data['value'] ;
+			$this->$data['name'] = safe($data['value'],'HTML') ;
 		}
 		define('URL_SITE',$this->url_site);
 		$this->getServer_status();
