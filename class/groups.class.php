@@ -170,7 +170,7 @@ class Groups{
 	/*Créer un groupe*/
 	
 	public function add(){
-		$this->_db->table = 'groups' ;
+		/*$this->_db->table = 'groups' ;
 		$data  = array(
 			'name' => safe($this->name,'SQL'),
 			'ownerid' => intval($_SESSION['uid']),
@@ -188,17 +188,15 @@ class Groups{
 		$this->_db->save($data2);
 		
 		$this->setGroupid($groupid) ;
+		*/
 		
 	}
 	
 	/*Edit*/
 	
 	public function editBadge(){
-		$this->_db->table = 'groups';
-		
-	
-		
-		$this->_db->save(array('id' => $this->groupid , 'badge' => $this->badge));
+	/*	$this->_db->table = 'groups';
+		$this->_db->save(array('id' => $this->groupid , 'badge' => $this->badge)); */
 		return true;
 	}
 
@@ -206,10 +204,11 @@ class Groups{
 	/*Savoir si le groupe demandé existe*/
 	
 	public function Exist(){
-		$req = mysql_query('SELECT id FROM groups WHERE id='.$this->groupid);
+		/*$req = mysql_query('SELECT id FROM groups WHERE id='.$this->groupid);
 		if(mysql_num_rows($req) >=1)
 			return true;
 		return false;
+		*/
 	}
 	
 

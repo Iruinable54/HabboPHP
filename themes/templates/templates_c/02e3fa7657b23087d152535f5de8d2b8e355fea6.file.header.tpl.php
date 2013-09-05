@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2013-09-04 16:09:51
+<?php /* Smarty version Smarty-3.1.8, created on 2013-09-04 16:38:01
          compiled from "/Applications/MAMP/htdocs/HabboPHP/themes/templates/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:32986493752273f2fb5b214-16040636%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1607516460522745c9299183-23480365%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '02e3fa7657b23087d152535f5de8d2b8e355fea6' => 
     array (
       0 => '/Applications/MAMP/htdocs/HabboPHP/themes/templates/header.tpl',
-      1 => 1372772468,
+      1 => 1378305472,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '32986493752273f2fb5b214-16040636',
+  'nocache_hash' => '1607516460522745c9299183-23480365',
   'function' => 
   array (
   ),
@@ -27,9 +27,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_52273f302ded40_62310262',
+  'unifunc' => 'content_522745c967e282_05118109',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_52273f302ded40_62310262')) {function content_52273f302ded40_62310262($_smarty_tpl) {?><?php  $_config = new Smarty_Internal_Config(($_smarty_tpl->tpl_vars['lang_dir']->value)."/".($_smarty_tpl->tpl_vars['lang']->value).".lang", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars(null, 'local'); ?> 
+<?php if ($_valid && !is_callable('content_522745c967e282_05118109')) {function content_522745c967e282_05118109($_smarty_tpl) {?><?php  $_config = new Smarty_Internal_Config(($_smarty_tpl->tpl_vars['lang_dir']->value)."/".($_smarty_tpl->tpl_vars['lang']->value).".lang", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars(null, 'local'); ?> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
@@ -216,7 +216,7 @@ body { behavior: url(/js/csshover.htc); }
 			<div id="subnavi-user"> 
 				<ul> 
 					<li id="myfriends"><a href="#"><span>Mes Amis</span></a><span class="r"></span></li> 
-					<li id="mygroups" class=""><a href="#"><span>Mes Groupes</span></a><span class="r"></span></li> 
+					
 					<li id="myrooms"><a href="#"><span>Mes Apparts</span></a><span class="r"></span></li> 
 				</ul> 
 						</div> 

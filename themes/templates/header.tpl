@@ -147,7 +147,7 @@ body { behavior: url(/js/csshover.htc); }
 			<div id="subnavi-user"> 
 				<ul> 
 					<li id="myfriends"><a href="#"><span>Mes Amis</span></a><span class="r"></span></li> 
-					<li id="mygroups" class=""><a href="#"><span>Mes Groupes</span></a><span class="r"></span></li> 
+					
 					<li id="myrooms"><a href="#"><span>Mes Apparts</span></a><span class="r"></span></li> 
 				</ul> 
 						</div> 

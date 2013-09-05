@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2013-09-04 16:09:52
+<?php /* Smarty version Smarty-3.1.8, created on 2013-09-04 16:38:01
          compiled from "/Applications/MAMP/htdocs/HabboPHP/themes/templates/footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:32346830252273f30b04f64-84500351%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:992251259522745c9b06c94-03655745%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '32346830252273f30b04f64-84500351',
+  'nocache_hash' => '992251259522745c9b06c94-03655745',
   'function' => 
   array (
   ),
@@ -22,9 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_52273f30c09604_59632408',
+  'unifunc' => 'content_522745c9b95420_69442003',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_52273f30c09604_59632408')) {function content_52273f30c09604_59632408($_smarty_tpl) {?><div id="column3" class="column">
+<?php if ($_valid && !is_callable('content_522745c9b95420_69442003')) {function content_522745c9b95420_69442003($_smarty_tpl) {?><div id="column3" class="column">
 		
 
 						
